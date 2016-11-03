@@ -75,7 +75,7 @@ blue genes!? phase of low energy, stress, differentiation
 
 --- .class #id 
 
-## Platereader Growth in E. coli
+## Growth & Gene Expression in E. coli
 
 <img src="assets/img/fritz_the_platypus.gif" alt="https://upload.wikimedia.org/wikipedia/en/c/c2/Platypus_sketch_by_Hmich176.gif" height="200">
 <img src="assets/img/ecoli_20141014.png" height="200">
