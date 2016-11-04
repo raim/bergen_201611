@@ -4,7 +4,7 @@ job1        : Gene Expression & Growth in Budding Yeast
 job2        : <p>{{job1}}<br/>{{job2}}</p>
 
 title       : Gene Expression & Growth in Budding Yeast 
-subtitle    : X-Men Group Retreat, Bergen Nov 2016
+subtitle    : X-Men Group Retreat, Bergen aan Zee, Nov 2016
 author      : Rainer Machne
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
