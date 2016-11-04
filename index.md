@@ -15,47 +15,80 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 
 --- 
-
+<style>
+em {
+  font-style: italic
+}
+</style>
 ## Respiratory Oscillations in Budding Yeast 
 
 ultradian|circadian
 ------|------
-<i>Saccharomyces cerevisiae</i>| <i>Synechocystis</i> PCC6803
+*Saccharomyces cerevisiae*| *Synechocystis* PCC6803
 <img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="180">|<img src="assets/img/cls_timecourse_major_total_fromLehmann14.png" height="190">
-|
-<div style='text-align: center;'><img src="assets/img/fermentor_detailed.png" align="center" height="200"></div>|$$ \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} &= + \mu X - \phi X  \\   \frac{\text{d}S}{\text{d}t} &= - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \mu =& \mu_{max} \frac{S^n}{S^n+K_S^n};\;      y = a + b \cdot S \end{aligned}  \end{equation*} $$
+Recently: *Karl*, the segmenTier, *Fritz*, the plateypus,| and the stinky bug: *E. coli*
+<img src="assets/img/anadenobolus_arboreus.png" height="140"><img src="assets/img/fritz_the_platypus.gif" alt="https://upload.wikimedia.org/wikipedia/en/c/c2/Platypus_sketch_by_Hmich176.gif" height="160">|<img src="assets/img/ecoli_20141014.png" height="160">
 
---- .class #id bg:#AAFF00AA
+
+
+--- .class #id 
 
 ### Varying Periods
 
+observed periods|continuous culture
+------|------
+|
+<img src="assets/img/strains_D_t.png" height="250">|<img src="assets/img/fermentor_detailed.png" height="250">
+|
+$$latex \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} &= + \mu X - \phi X  \\   \frac{\text{d}S}{\text{d}t} &= - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \mu =& \mu_{max}\frac{S^n}{S^n+K^n};\; y = \frac{\Delta X}{\Delta S}  \end{aligned} \end{equation*} $$ | <br/><font size=5>at steady state: $$\mu = \phi$$ growth rate = dilution rate</font>
 
-oscillation: period distinct from cell cycle, but synchronization
-and semi-linear relations; continuous culture! 
+--- .class #id 
+
+### Varying Periods
+
+observed periods|the budding cycle
+------|------
+|
+<img src="assets/img/zoom_T2_t.png" height="250">|<br/><img src="assets/img/thompson80_fig1.png" height="200">
+|
+$$\begin{equation*} \begin{aligned}X(t) &= X(0) \cdot e^{\mu\cdot t}\\t_2 &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}$$|<img src="assets/img/budding.png" height="180">
 
 --- .class #id
 
 ### Varying Periods ... Constant Gene Expression Profile
 
-Saccharomyces cerevisiae| growth rate| | |
+Observed periods| | | |
 ---|---|---|---
 <img src="assets/img/wang15_highD_ranges_major.png" height="120">|CEN.PK 122<br/> $$0.13\; \text{h}^{-1}$$ | <img src="assets/img/tuliCoarse_tu05_timecourse_ranges_major_nrm.png" height="120">| CEN.PK 122<br/>$$0.1\;\text{h}^{-1}$$ 
 <img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120">|  IFO 0233<br/>$$0.09\;\text{h}^{-1}$$ | <img src="assets/img/wang15_lowD_ranges_major.png" height="120">| CEN.PK 122<br/>$$0.05\;\text{h}^{-1}$$
-<img src="assets/img/slavov11_ranges_major.png" height="120">| DBY12007<br/>$$\sim \textbf{0}\;\text{h}^{-1}$$ | Oscillation also <br/>without cell division!
+<img src="assets/img/slavov11_ranges_major.png" height="120">| DBY12007<br/>$$\sim \textbf{0}\;\text{h}^{-1}$$ | <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division!</font></div>
 
 <br/>
 <div style='text-align: right;'>$$\rightarrow \text{live at the brink}$$</div>
 
 --- .class #id 
 
-### Gene Expression & Growth Laws
+### Gene Expression : function
+<br/>
+
+<div style='text-align: center;'><img src="assets/img/clusterDAG_v2_nona.png" height="280"></div>
+
+<br/>
+<div style='text-align: right;'>
+Machne & Murray, PLoS ONE 2012<br/>
+</div>
+
+--- .class #id 
+
+### Gene Expression : meta-transcriptome
 <br/>
 
 <div style='text-align: center;'><img src="assets/img/machne12_fig2_cropped.png" height="280"></div>
 
 <br/>
+<div style='text-align: right;'>
 Machne & Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011
+</div>
 
 --- .class #id 
 
@@ -66,8 +99,9 @@ Slavov et al., Mol Biol Cell 2011
 
 
 <br/>
+<div style='text-align: right;'>
 Machne & Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011
+Slavov et al., Mol Biol Cell 2011</div>
 
 --- .class #id 
 
@@ -78,14 +112,20 @@ Slavov et al., Mol Biol Cell 2011
 
 
 <br/>
+<div style='text-align: right;'>
 Machne & Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011
+Slavov et al., Mol Biol Cell 2011</div>
 
 <div style='text-align: right;'>$$t_2=\frac{\ln(2)}{\mu}$$</div>
 
 --- .class #id 
+<style>
+em {
+  font-style: italic
+}
+</style>
 
-### Growth Laws: Linear Relations to &mu;
+### Growth Laws: linear relations to *&mu;*
 
 major carbon flux| nucleic acid content
 ------|------
@@ -100,13 +140,14 @@ recent trade-off models: protein costs
 
 --- .class #id 
 
-### A Working Hypothesis
+### A Working Hypothesis: Life's Fundamental Feedbacks
 
 culture level|cellular level
 ---|---
 |
 <img src="assets/img/basic_feedback.png"  height="180">|<img src="assets/img/model_feedback.png"  height="220">
 
+<font size=3>
 $$   \begin{equation*}
     \label{eqn:ancat}
     \begin{aligned}
@@ -116,8 +157,25 @@ $$   \begin{equation*}
       adp & = a_{tot} - atp\\\hline
      \end{aligned}
   \end{equation*} $$
+</font>
 
 -> model yeast/coilseq - sequence-dependence of DNA state!
+
+--- .class #id 
+
+## Growth & Stress
+
+red/blue genes in batch growth:
+
+<style>
+article body {
+  font-size: 16px;
+}
+</style>
+
+yeast diauxie: expo phase is not "balanced", slow transition, atp-model?
+
+blue genes!? phase of low energy, stress, differentiation 
 
 --- .class #id 
 
@@ -129,16 +187,6 @@ $$   \begin{equation*}
 <div style='text-align: right;'>... &#169; fritz, the <i>platypus</i></div>
 
 `platexpress`
-
---- .class #id 
-
-## Growth & Stress
-
-red/blue genes in batch growth:
-
-yeast diauxie: expo phase is not "balanced", slow transition, atp-model?
-
-blue genes!? phase of low energy, stress, differentiation 
 
 --- .class #id 
 

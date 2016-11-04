@@ -42,31 +42,36 @@
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Respiratory Oscillations in Budding Yeast</h2>
-  </hgroup>
   <article data-timings="">
-    <table><thead>
+    <style>
+em {
+  font-style: italic
+}
+</style>
+
+<h2>Respiratory Oscillations in Budding Yeast</h2>
+
+<table><thead>
 <tr>
 <th>ultradian</th>
 <th>circadian</th>
 </tr>
 </thead><tbody>
 <tr>
-<td><i>Saccharomyces cerevisiae</i></td>
-<td><i>Synechocystis</i> PCC6803</td>
+<td><em>Saccharomyces cerevisiae</em></td>
+<td><em>Synechocystis</em> PCC6803</td>
 </tr>
 <tr>
 <td><img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="180"></td>
 <td><img src="assets/img/cls_timecourse_major_total_fromLehmann14.png" height="190"></td>
 </tr>
 <tr>
-<td></td>
-<td></td>
+<td>Recently: <em>Karl</em>, the segmenTier, <em>Fritz</em>, the plateypus,</td>
+<td>and the stinky bug: <em>E. coli</em></td>
 </tr>
 <tr>
-<td><div style='text-align: center;'><img src="assets/img/fermentor_detailed.png" align="center" height="200"></div></td>
-<td>\[ \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} &= + \mu X - \phi X  \\   \frac{\text{d}S}{\text{d}t} &= - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \mu =& \mu_{max} \frac{S^n}{S^n+K_S^n};\;      y = a + b \cdot S \end{aligned}  \end{equation*} \]</td>
+<td><img src="assets/img/anadenobolus_arboreus.png" height="140"><img src="assets/img/fritz_the_platypus.gif" alt="https://upload.wikimedia.org/wikipedia/en/c/c2/Platypus_sketch_by_Hmich176.gif" height="160"></td>
+<td><img src="assets/img/ecoli_20141014.png" height="160"></td>
 </tr>
 </tbody></table>
 
@@ -74,13 +79,67 @@
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:#AAFF00AA;">
+<slide class="class" id="id" style="background:;">
   <hgroup>
     <h3>Varying Periods</h3>
   </hgroup>
   <article data-timings="">
-    <p>oscillation: period distinct from cell cycle, but synchronization
-and semi-linear relations; continuous culture! </p>
+    <table><thead>
+<tr>
+<th>observed periods</th>
+<th>continuous culture</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/strains_D_t.png" height="250"></td>
+<td><img src="assets/img/fermentor_detailed.png" height="250"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\[ \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} &= + \mu X - \phi X  \\   \frac{\text{d}S}{\text{d}t} &= - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \mu =& \mu_{max}\frac{S^n}{S^n+K^n};\; y = \frac{\Delta X}{\Delta S}  \end{aligned} \end{equation*} \]</td>
+<td><br/><font size=5>at steady state: \[\mu = \phi\] growth rate = dilution rate</font></td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h3>Varying Periods</h3>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>observed periods</th>
+<th>the budding cycle</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/zoom_T2_t.png" height="250"></td>
+<td><br/><img src="assets/img/thompson80_fig1.png" height="200"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\[\begin{equation*} \begin{aligned}X(t) &= X(0) \cdot e^{\mu\cdot t}\\t_2 &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}\]</td>
+<td><img src="assets/img/budding.png" height="180"></td>
+</tr>
+</tbody></table>
 
   </article>
   <!-- Presenter Notes -->
@@ -93,8 +152,8 @@ and semi-linear relations; continuous culture! </p>
   <article data-timings="">
     <table><thead>
 <tr>
-<th>Saccharomyces cerevisiae</th>
-<th>growth rate</th>
+<th>Observed periods</th>
+<th></th>
 <th></th>
 <th></th>
 </tr>
@@ -114,7 +173,7 @@ and semi-linear relations; continuous culture! </p>
 <tr>
 <td><img src="assets/img/slavov11_ranges_major.png" height="120"></td>
 <td>DBY12007<br/>\[\sim \textbf{0}\;\text{h}^{-1}\]</td>
-<td>Oscillation also <br/>without cell division!</td>
+<td><br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division!</font></div></td>
 <td></td>
 </tr>
 </tbody></table>
@@ -129,16 +188,37 @@ and semi-linear relations; continuous culture! </p>
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h3>Gene Expression &amp; Growth Laws</h3>
+    <h3>Gene Expression : function</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><br/></p>
+
+<div style='text-align: center;'><img src="assets/img/clusterDAG_v2_nona.png" height="280"></div>
+
+<p><br/></p>
+
+<div style='text-align: right;'>
+Machne & Murray, PLoS ONE 2012<br/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h3>Gene Expression : meta-transcriptome</h3>
   </hgroup>
   <article data-timings="">
     <p><br/></p>
 
 <div style='text-align: center;'><img src="assets/img/machne12_fig2_cropped.png" height="280"></div>
 
-<p><br/>
-Machne &amp; Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011</p>
+<p><br/></p>
+
+<div style='text-align: right;'>
+Machne & Murray, PLoS ONE 2012<br/>
+</div>
 
   </article>
   <!-- Presenter Notes -->
@@ -153,9 +233,11 @@ Slavov et al., Mol Biol Cell 2011</p>
 
 <div style='text-align: center;'><img src="assets/img/cluster_vs_rates_major.png" height="280"></div>
 
-<p><br/>
-Machne &amp; Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011</p>
+<p><br/></p>
+
+<div style='text-align: right;'>
+Machne & Murray, PLoS ONE 2012<br/>
+Slavov et al., Mol Biol Cell 2011</div>
 
   </article>
   <!-- Presenter Notes -->
@@ -170,9 +252,11 @@ Slavov et al., Mol Biol Cell 2011</p>
 
 <div style='text-align: center;'><img src="assets/img/cluster_vs_doubling_AD.png" height="280"></div>
 
-<p><br/>
-Machne &amp; Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011</p>
+<p><br/></p>
+
+<div style='text-align: right;'>
+Machne & Murray, PLoS ONE 2012<br/>
+Slavov et al., Mol Biol Cell 2011</div>
 
 <div style='text-align: right;'>$$t_2=\frac{\ln(2)}{\mu}$$</div>
 
@@ -181,11 +265,16 @@ Slavov et al., Mol Biol Cell 2011</p>
 </slide>
 
 <slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h3>Growth Laws: Linear Relations to &mu;</h3>
-  </hgroup>
   <article data-timings="">
-    <table><thead>
+    <style>
+em {
+  font-style: italic
+}
+</style>
+
+<h3>Growth Laws: linear relations to <em>&mu;</em></h3>
+
+<table><thead>
 <tr>
 <th>major carbon flux</th>
 <th>nucleic acid content</th>
@@ -215,7 +304,7 @@ recent trade-off models: protein costs</p>
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h3>A Working Hypothesis</h3>
+    <h3>A Working Hypothesis: Life&#39;s Fundamental Feedbacks</h3>
   </hgroup>
   <article data-timings="">
     <table><thead>
@@ -234,7 +323,8 @@ recent trade-off models: protein costs</p>
 </tr>
 </tbody></table>
 
-<p>\[   \begin{equation*}
+<p><font size=3>
+\[   \begin{equation*}
     \label{eqn:ancat}
     \begin{aligned}
       \frac{\text{d}X}{\text{d}t} &= (\mu_{ab} - \phi) X  \\
@@ -242,9 +332,31 @@ recent trade-off models: protein costs</p>
       \frac{\text{d}atp}{\text{d}t} &= (n_{cd} \mu_{cd} - n_{ab} \mu_{ab} - \mu_{m})\frac{C_c}{V_c} - \mu_{ab} atp\\
       adp & = a_{tot} - atp\\\hline
      \end{aligned}
-  \end{equation*} \]</p>
+  \end{equation*} \]
+</font></p>
 
 <p>-&gt; model yeast/coilseq - sequence-dependence of DNA state!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Growth &amp; Stress</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>red/blue genes in batch growth:</p>
+
+<style>
+article body {
+  font-size: 16px;
+}
+</style>
+
+<p>yeast diauxie: expo phase is not &quot;balanced&quot;, slow transition, atp-model?</p>
+
+<p>blue genes!? phase of low energy, stress, differentiation </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -261,21 +373,6 @@ recent trade-off models: protein costs</p>
 <div style='text-align: right;'>... &#169; fritz, the <i>platypus</i></div>
 
 <p><code>platexpress</code></p>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h2>Growth &amp; Stress</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>red/blue genes in batch growth:</p>
-
-<p>yeast diauxie: expo phase is not &quot;balanced&quot;, slow transition, atp-model?</p>
-
-<p>blue genes!? phase of low energy, stress, differentiation </p>
 
   </article>
   <!-- Presenter Notes -->
@@ -358,7 +455,7 @@ after yeast WGD</p>
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Respiratory Oscillations in Budding Yeast'>
+        data-slide=1 title='NA'>
          1
       </a>
     </li>
@@ -370,86 +467,98 @@ after yeast WGD</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Varying Periods ... Constant Gene Expression Profile'>
+        data-slide=3 title='Varying Periods'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='Gene Expression &amp; Growth Laws'>
+        data-slide=4 title='Varying Periods ... Constant Gene Expression Profile'>
          4
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Gene Expression &amp; Growth Laws'>
+        data-slide=5 title='Gene Expression : function'>
          5
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Gene Expression &amp; Growth Laws'>
+        data-slide=6 title='Gene Expression : meta-transcriptome'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Growth Laws: Linear Relations to &mu;'>
+        data-slide=7 title='Gene Expression &amp; Growth Laws'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='A Working Hypothesis'>
+        data-slide=8 title='Gene Expression &amp; Growth Laws'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Growth &amp; Gene Expression in E. coli &amp; <i>Cyanobacteria</i>'>
+        data-slide=9 title='NA'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='Growth &amp; Stress'>
+        data-slide=10 title='A Working Hypothesis: Life&#39;s Fundamental Feedbacks'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='Stress &amp; Cell Structure'>
+        data-slide=11 title='Growth &amp; Stress'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Stress &amp; Chromatin'>
+        data-slide=12 title='Growth &amp; Gene Expression in E. coli &amp; <i>Cyanobacteria</i>'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Working Hypothesis: Chromatin Remodeling'>
+        data-slide=13 title='Stress &amp; Cell Structure'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Stress &amp; Pervasive Transcription in Yeast'>
+        data-slide=14 title='Stress &amp; Chromatin'>
          14
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title='THE END'>
+        data-slide=15 title='Working Hypothesis: Chromatin Remodeling'>
          15
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title='NA'>
+        data-slide=16 title='Stress &amp; Pervasive Transcription in Yeast'>
          16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='THE END'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='NA'>
+         18
       </a>
     </li>
   </ul>
