@@ -23,9 +23,16 @@ ultradian|circadian
 ------|------
 *Saccharomyces cerevisiae*| *Synechocystis* PCC6803
 <img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="180">|<img src="assets/img/cls_timecourse_major_total_fromLehmann14.png" height="190">
-Recently: *Karl*, the segmenTier, *Fritz*, the plateypus,| and the stinky bug: *E. coli*
-<img src="assets/img/anadenobolus_arboreus.png" height="140"><img src="assets/img/fritz_the_platypus.gif" alt="https://upload.wikimedia.org/wikipedia/en/c/c2/Platypus_sketch_by_Hmich176.gif" height="160">|<img src="assets/img/ecoli_20141014.png" height="160">
+Paul, the *plateypus* and the stinky bug *E. coli* |Karl, the *segmenTier*
+<img src="assets/img/ecoli_20141014.png" height="160"><img src="assets/img/fritz_the_platypus.gif" height="160">|<img src="assets/img/anadenobolus_arboreus.png" height="140">
 
+--- .class #id 
+
+### *E. coli* Growth & Gene Expression
+
+<img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230">
+
+$$latex \begin{equation*} \begin{aligned}  X(t) &= X(0) \cdot e^{\mu\cdot t}\\t_2 &= \frac{\ln(2)}{\mu}  \end{aligned} \end{equation*} $$
 
 
 --- .class #id 
@@ -173,17 +180,6 @@ article body {
 yeast diauxie: expo phase is not "balanced", slow transition, atp-model?
 
 blue genes!? phase of low energy, stress, differentiation 
-
---- .class #id 
-
-### Growth & Gene Expression in E. coli & <i>Cyanobacteria</i>
-
-<img src="assets/img/ecoli_20141014.png" height="300">
-<img src="assets/img/fritz_the_platypus.gif" alt="https://upload.wikimedia.org/wikipedia/en/c/c2/Platypus_sketch_by_Hmich176.gif" height="350">
-
-<div style='text-align: right;'>... &#169; fritz, the <i>platypus</i></div>
-
-`platexpress`
 
 --- .class #id 
 
