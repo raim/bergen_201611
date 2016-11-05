@@ -226,11 +226,6 @@ after yeast WGD
 
 concepts and tools for cyano/bacteria, coilseq
 
-```{r echo=FALSE, width=2, height=2}
-plot(1,1,col=NA,axes=F,ylab=NA,xlab=NA)
-text(1,1,"sarah",cex=5)
-```
-
 --- .class #id 
 
 
