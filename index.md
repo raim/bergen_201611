@@ -1,8 +1,5 @@
 --- 
 
-job1        : Gene Expression & Growth in Budding Yeast 
-job2        : <p>{{job1}}<br/>{{job2}}</p>
-
 title       : Gene Expression & Growth in Budding Yeast 
 subtitle    : X-Men Group Retreat, Bergen aan Zee, Nov 2016
 author      : Rainer Machne
@@ -228,6 +225,8 @@ after yeast WGD
 ## THE END
 
 concepts and tools for cyano/bacteria, coilseq
+
+![plot of chunk unnamed-chunk-1](assets/fig/unnamed-chunk-1-1.png)
 
 --- .class #id 
 
