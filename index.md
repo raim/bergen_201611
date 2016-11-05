@@ -23,7 +23,7 @@ ultradian|circadian
 ------|------
 *Saccharomyces cerevisiae*| *Synechocystis* PCC6803
 <img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="180">|<img src="assets/img/cls_timecourse_major_total_fromLehmann14.png" height="190">
-Paul, the *plateypus* and the stinky bug *E. coli* |Karl, the *segmenTier*
+Paul, the *plateypus* and *E. coli*, the stinky bug |Karl, the *segmenTier*
 <img src="assets/img/ecoli_20141014.png" height="160"><img src="assets/img/fritz_the_platypus.gif" height="160">|<img src="assets/img/anadenobolus_arboreus.png" height="140">
 
 --- .class #id 
@@ -32,40 +32,43 @@ Paul, the *plateypus* and the stinky bug *E. coli* |Karl, the *segmenTier*
 
 <img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230">
 
-$$latex \begin{equation*} \begin{aligned}  X(t) &= X(0) \cdot e^{\mu\cdot t}\\t_2 &= \frac{\ln(2)}{\mu}  \end{aligned} \end{equation*} $$
+$$latex \begin{equation*} \begin{aligned}  X(t) =& X(0) \cdot e^{\mu\cdot t}\\ \int X\\ \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)\\ \\t_D &= \frac{\ln(2)}{\mu}  \end{aligned} \end{equation*} $$
 
 
 --- .class #id 
 
-### Varying Periods
+#### Varying Periods
 
-observed periods|continuous culture
+continuous culture|observed periods
 ------|------
 |
-<img src="assets/img/strains_D_t.png" height="250">|<img src="assets/img/fermentor_detailed.png" height="250">
+<img src="assets/img/fermentor_detailed.png" height="250">|<img src="assets/img/strains_D_t.png" height="250">
 |
-$$latex \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} &= + \mu X - \phi X  \\   \frac{\text{d}S}{\text{d}t} &= - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \mu =& \mu_{max}\frac{S^n}{S^n+K^n};\; y = \frac{\Delta X}{\Delta S}  \end{aligned} \end{equation*} $$ | <br/><font size=5>at steady state: $$\mu = \phi$$ growth rate = dilution rate</font>
+<font size=5>in continuous culture: $$latex \begin{equation*} \begin{aligned} \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)- \phi X(t) \end{aligned} \end{equation*} $$ </font>| <font size=5>at steady state: $$\mu = \phi$$ $$\mu = \mu_{max}\frac{S^n}{S^n+K^n}$$ 
+
+<font size=3>Monod, Annual Review of Microbiology 1949: *The Growth of Bacterial Cultures.*<br/>
+Finn & Wilson, J Agric Food Chem 1954: *Population Dynamics of a Continuous Propagator for Microorganisms.*</font>
 
 --- .class #id 
 
-### Varying Periods
+#### Varying Periods
 
-observed periods|the budding cycle
+the budding cycle|observed periods
 ------|------
 |
-<img src="assets/img/zoom_T2_t.png" height="250">|<br/><img src="assets/img/thompson80_fig1.png" height="200">
+<br/><img src="assets/img/thompson80_fig1.png" height="200">|<img src="assets/img/zoom_T2_t.png" height="250">
 |
-$$\begin{equation*} \begin{aligned}X(t) &= X(0) \cdot e^{\mu\cdot t}\\t_2 &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}$$|<img src="assets/img/budding.png" height="180">
+<img src="assets/img/budding.png" height="180">|<br/><br/>$$\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}$$
 
 --- .class #id
 
-### Varying Periods ... Constant Gene Expression Profile
+#### Varying Periods ... Constant Gene Expression Profile
 
 Observed periods| | | |
 ---|---|---|---
 <img src="assets/img/wang15_highD_ranges_major.png" height="120">|CEN.PK 122<br/> $$0.13\; \text{h}^{-1}$$ | <img src="assets/img/tuliCoarse_tu05_timecourse_ranges_major_nrm.png" height="120">| CEN.PK 122<br/>$$0.1\;\text{h}^{-1}$$ 
 <img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120">|  IFO 0233<br/>$$0.09\;\text{h}^{-1}$$ | <img src="assets/img/wang15_lowD_ranges_major.png" height="120">| CEN.PK 122<br/>$$0.05\;\text{h}^{-1}$$
-<img src="assets/img/slavov11_ranges_major.png" height="120">| DBY12007<br/>$$\sim \textbf{0}\;\text{h}^{-1}$$ | <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division!</font></div>
+ <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div> | DBY12007<br/>$$\sim \textbf{0}\;\text{h}^{-1}$$ | <img src="assets/img/slavov11_ranges_major.png" height="120">|
 
 <br/>
 <div style='text-align: right;'>$$\rightarrow \text{live at the brink}$$</div>
@@ -120,7 +123,7 @@ Slavov et al., Mol Biol Cell 2011</div>
 Machne & Murray, PLoS ONE 2012<br/>
 Slavov et al., Mol Biol Cell 2011</div>
 
-<div style='text-align: right;'>$$t_2=\frac{\ln(2)}{\mu}$$</div>
+<div style='text-align: right;'>$$t_D=\frac{\ln(2)}{\mu}$$</div>
 
 --- .class #id 
 <style>
@@ -129,17 +132,17 @@ em {
 }
 </style>
 
-### Growth Laws: linear relations to *&mu;*
+major carbon flux| nucleic acid content|cell
+---|---|---
+<div style='text-align: center;'><img src="assets/img/data_DW_interpolated_nc.png"  height="140"></div>|<div style='text-align: center;'><img src="assets/img/data_RNA_interpolated_nc.png"  height="140"></div>|
+||
+<div style='text-align: center;'><img src="assets/img/data_EtOH_interpolated_nc.png"  height="140"></div>|<div style='text-align: center;'><img src="assets/img/data_DNA_interpolated_nc.png"  height="140"></div>|
+||
+qco2||<div style='text-align: center;'><img src="assets/img/data_V_cell_interpolated_nc.png"  height="140"></div>
 
-major carbon flux| nucleic acid content
-------|------
-<div style='text-align: center;'><img src="assets/img/data_DW_interpolated_nc.png"  height="220"></div>|<div style='text-align: center;'><img src="assets/img/data_RNA_interpolated_nc.png"  height="220"></div>
-|
-<div style='text-align: center;'><img src="assets/img/data_EtOH_interpolated_nc.png"  height="220"></div>|<div style='text-align: center;'><img src="assets/img/data_V_cell_interpolated_nc.png"  height="220"></div>
-
-
-koch1988, &mu; = rib2
-heijnen92: limiting is membrane space
+<br/>
+koch1988, &mu; = rib2<br/>
+heijnen92: limiting is membrane space<br/>
 recent trade-off models: protein costs
 
 --- .class #id 
@@ -162,8 +165,6 @@ $$   \begin{equation*}
      \end{aligned}
   \end{equation*} $$
 </font>
-
--> model yeast/coilseq - sequence-dependence of DNA state!
 
 --- .class #id 
 

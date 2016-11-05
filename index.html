@@ -66,7 +66,7 @@ em {
 <td><img src="assets/img/cls_timecourse_major_total_fromLehmann14.png" height="190"></td>
 </tr>
 <tr>
-<td>Paul, the <em>plateypus</em> and the stinky bug <em>E. coli</em></td>
+<td>Paul, the <em>plateypus</em> and <em>E. coli</em>, the stinky bug</td>
 <td>Karl, the <em>segmenTier</em></td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ em {
   <article data-timings="">
     <p><img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230"></p>
 
-<p>\[ \begin{equation*} \begin{aligned}  X(t) &= X(0) \cdot e^{\mu\cdot t}\\t_2 &= \frac{\ln(2)}{\mu}  \end{aligned} \end{equation*} \]</p>
+<p>\[ \begin{equation*} \begin{aligned}  X(t) =& X(0) \cdot e^{\mu\cdot t}\\ \int X\\ \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)\\ \\t_D &= \frac{\ln(2)}{\mu}  \end{aligned} \end{equation*} \]</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -94,13 +94,13 @@ em {
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h3>Varying Periods</h3>
+    <h4>Varying Periods</h4>
   </hgroup>
   <article data-timings="">
     <table><thead>
 <tr>
-<th>observed periods</th>
 <th>continuous culture</th>
+<th>observed periods</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -108,18 +108,21 @@ em {
 <td></td>
 </tr>
 <tr>
-<td><img src="assets/img/strains_D_t.png" height="250"></td>
 <td><img src="assets/img/fermentor_detailed.png" height="250"></td>
+<td><img src="assets/img/strains_D_t.png" height="250"></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>\[ \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} &= + \mu X - \phi X  \\   \frac{\text{d}S}{\text{d}t} &= - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \mu =& \mu_{max}\frac{S^n}{S^n+K^n};\; y = \frac{\Delta X}{\Delta S}  \end{aligned} \end{equation*} \]</td>
-<td><br/><font size=5>at steady state: \[\mu = \phi\] growth rate = dilution rate</font></td>
+<td><font size=5>in continuous culture: \[ \begin{equation*} \begin{aligned} \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)- \phi X(t) \end{aligned} \end{equation*} \] </font></td>
+<td><font size=5>at steady state: \[\mu = \phi\] \[\mu = \mu_{max}\frac{S^n}{S^n+K^n}\]</td>
 </tr>
 </tbody></table>
+
+<p><font size=3>Monod, Annual Review of Microbiology 1949: <em>The Growth of Bacterial Cultures.</em><br/>
+Finn &amp; Wilson, J Agric Food Chem 1954: <em>Population Dynamics of a Continuous Propagator for Microorganisms.</em></font></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -127,13 +130,13 @@ em {
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h3>Varying Periods</h3>
+    <h4>Varying Periods</h4>
   </hgroup>
   <article data-timings="">
     <table><thead>
 <tr>
-<th>observed periods</th>
 <th>the budding cycle</th>
+<th>observed periods</th>
 </tr>
 </thead><tbody>
 <tr>
@@ -141,16 +144,16 @@ em {
 <td></td>
 </tr>
 <tr>
-<td><img src="assets/img/zoom_T2_t.png" height="250"></td>
 <td><br/><img src="assets/img/thompson80_fig1.png" height="200"></td>
+<td><img src="assets/img/zoom_T2_t.png" height="250"></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td>\[\begin{equation*} \begin{aligned}X(t) &= X(0) \cdot e^{\mu\cdot t}\\t_2 &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}\]</td>
 <td><img src="assets/img/budding.png" height="180"></td>
+<td><br/><br/>\[\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}\]</td>
 </tr>
 </tbody></table>
 
@@ -160,7 +163,7 @@ em {
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h3>Varying Periods ... Constant Gene Expression Profile</h3>
+    <h4>Varying Periods ... Constant Gene Expression Profile</h4>
   </hgroup>
   <article data-timings="">
     <table><thead>
@@ -184,9 +187,9 @@ em {
 <td>CEN.PK 122<br/>\[0.05\;\text{h}^{-1}\]</td>
 </tr>
 <tr>
-<td><img src="assets/img/slavov11_ranges_major.png" height="120"></td>
+<td><br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div></td>
 <td>DBY12007<br/>\[\sim \textbf{0}\;\text{h}^{-1}\]</td>
-<td><br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division!</font></div></td>
+<td><img src="assets/img/slavov11_ranges_major.png" height="120"></td>
 <td></td>
 </tr>
 </tbody></table>
@@ -271,7 +274,7 @@ Slavov et al., Mol Biol Cell 2011</div>
 Machne & Murray, PLoS ONE 2012<br/>
 Slavov et al., Mol Biol Cell 2011</div>
 
-<div style='text-align: right;'>$$t_2=\frac{\ln(2)}{\mu}$$</div>
+<div style='text-align: right;'>$$t_D=\frac{\ln(2)}{\mu}$$</div>
 
   </article>
   <!-- Presenter Notes -->
@@ -285,30 +288,43 @@ em {
 }
 </style>
 
-<h3>Growth Laws: linear relations to <em>&mu;</em></h3>
-
 <table><thead>
 <tr>
 <th>major carbon flux</th>
 <th>nucleic acid content</th>
+<th>cell</th>
 </tr>
 </thead><tbody>
 <tr>
-<td><div style='text-align: center;'><img src="assets/img/data_DW_interpolated_nc.png"  height="220"></div></td>
-<td><div style='text-align: center;'><img src="assets/img/data_RNA_interpolated_nc.png"  height="220"></div></td>
+<td><div style='text-align: center;'><img src="assets/img/data_DW_interpolated_nc.png"  height="140"></div></td>
+<td><div style='text-align: center;'><img src="assets/img/data_RNA_interpolated_nc.png"  height="140"></div></td>
+<td></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
+<td></td>
 </tr>
 <tr>
-<td><div style='text-align: center;'><img src="assets/img/data_EtOH_interpolated_nc.png"  height="220"></div></td>
-<td><div style='text-align: center;'><img src="assets/img/data_V_cell_interpolated_nc.png"  height="220"></div></td>
+<td><div style='text-align: center;'><img src="assets/img/data_EtOH_interpolated_nc.png"  height="140"></div></td>
+<td><div style='text-align: center;'><img src="assets/img/data_DNA_interpolated_nc.png"  height="140"></div></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>qco2</td>
+<td></td>
+<td><div style='text-align: center;'><img src="assets/img/data_V_cell_interpolated_nc.png"  height="140"></div></td>
 </tr>
 </tbody></table>
 
-<p>koch1988, &mu; = rib2
-heijnen92: limiting is membrane space
+<p><br/>
+koch1988, &mu; = rib2<br/>
+heijnen92: limiting is membrane space<br/>
 recent trade-off models: protein costs</p>
 
   </article>
@@ -347,8 +363,6 @@ recent trade-off models: protein costs</p>
      \end{aligned}
   \end{equation*} \]
 </font></p>
-
-<p>-&gt; model yeast/coilseq - sequence-dependence of DNA state!</p>
 
   </article>
   <!-- Presenter Notes -->

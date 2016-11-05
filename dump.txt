@@ -1,3 +1,4 @@
 |
 <div style='text-align: center;'><img src="assets/img/fermentor_detailed.png" height="200"></div>|$$ \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} &= + \mu X - \phi X  \\   \frac{\text{d}S}{\text{d}t} &= - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \mu =& \mu_{max} \frac{S^n}{S^n+K_S^n};\;      y = a + b \cdot S \end{aligned}  \end{equation*} $$
 
+$$latex \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} =& + \mu X - \phi X  \\ \mu =& \mu_{max}\frac{S^n}{S^n+K^n} \\ \frac{\text{d}S}{\text{d}t} =& - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \; y = \frac{\Delta X}{\Delta S}  \end{aligned} \end{equation*} $$ | <br/><font size=5>at steady state: $$\mu = \phi$$ growth rate = dilution rate</font>
