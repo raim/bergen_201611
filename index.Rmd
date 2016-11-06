@@ -337,14 +337,18 @@ Slavov *et al.*, Cell Rep 2014: *Constant growth rate can be supported by decrea
 Zid & O'Shea, Nature 2014: *Promoter sequences direct cytoplasmic localization and translation of mRNAs during starvation in yeast.*
 </font>
 
---- .class #id 
+--- &twocolbigright
 
 ### Stress & Chromatin
 
-amariei: pol fall off, total mRNA at minimum  and nucleosomes focus at 
-ATP/ADP minimum
+*** =left
+<img src="assets/img/amariei14_fig1b.png"  height="400">
 
--> model chromatin remodeling, but ATP/ADP general, electron transport chain
+*** =right
+<img src="assets/img/amariei14_fig3a.png"  height="100">
+<img src="assets/img/amariei14_fig3c.png"  height="100">
+<img src="assets/img/amariei14_fig3e-g.png"  height="300">
+
 
 --- .class #id 
 
@@ -352,6 +356,8 @@ ATP/ADP minimum
 
 ![Fritz](assets/img/nucl_nocetti16_movie_AD.gif)
 ![Fritz](assets/img/nucl_amariei14_movie_AD.gif)
+
+-> model chromatin remodeling, but ATP/ADP general, electron transport chain
 
 --- .class #id 
 
