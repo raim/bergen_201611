@@ -1,6 +1,6 @@
 --- 
 
-title       : Gene Expression & Growth in Budding Yeast 
+title       : Gene Expression & Growth <br/>in Budding Yeast 
 subtitle    : X-Men Group Retreat, Bergen aan Zee, Nov 2016
 author      : Rainer Machne
 job         : 
@@ -23,19 +23,42 @@ ultradian|circadian
 ------|------
 *Saccharomyces cerevisiae*| *Synechocystis* PCC6803
 <img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="180">|<img src="assets/img/cls_timecourse_major_total_fromLehmann14.png" height="190">
-Paul, the *plateypus* and *E. coli*, the stinky bug |Karl, the *segmenTier*
-<img src="assets/img/ecoli_20141014.png" height="160"><img src="assets/img/fritz_the_platypus.gif" height="160">|<img src="assets/img/anadenobolus_arboreus.png" height="140">
+*E. coli*  & Paul, the *plateypus*|RNA-seq & Karl, the *segmenTier*
+<img src="assets/img/ecoli_20141014.png" height="160"><img src="assets/img/fritz_the_platypus.gif" height="160">|<img src="assets/img/anadenobolus_arboreus-90.png" height="160">
 
 --- .class #id 
 
-### *E. coli* Growth & Gene Expression
+### Growth & Gene Expression in *E. coli* 
 
-<img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230">
+<img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230"><img src="assets/img/Ecoli_20161014_OD_grofit_A8.png" height="250">
 
-$$latex \begin{equation*} \begin{aligned}  X(t) =& X(0) \cdot e^{\mu\cdot t}\\ \int X\\ \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)\\ \\t_D &= \frac{\ln(2)}{\mu}  \end{aligned} \end{equation*} $$
+$$latex 
+\begin{equation*} \begin{aligned}  
+\frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)\\ 
+X(t) =& X(0)   e^{\mu  t}\\ 
+t_D =& \frac{\ln(2)}{\mu}  
+\end{aligned} \end{equation*} $$
 
+<br/>
+https://github.com/raim/platexpress or Paul, the *plateypus*?
 
 --- .class #id 
+
+### Growth & Gene Expression in *E. coli* 
+
+<img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230"><img src="assets/img/Ecoli_20161014_OD_growthrates.png" height="250">
+
+$$latex 
+\begin{equation*} \begin{aligned}  
+\frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)\\ 
+X(t) =& X(0)   e^{\mu  t}\\ 
+t_D =& \frac{\ln(2)}{\mu}  
+\end{aligned} \end{equation*} $$
+
+<br/>
+https://github.com/raim/platexpress or Paul, the *plateypus*?
+
+--- .lineheight
 
 #### Varying Periods
 
@@ -44,12 +67,31 @@ continuous culture|observed periods
 |
 <img src="assets/img/fermentor_detailed.png" height="250">|<img src="assets/img/strains_D_t.png" height="250">
 |
-<font size=5>in continuous culture: $$latex \begin{equation*} \begin{aligned} \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)- \phi X(t) \end{aligned} \end{equation*} $$ </font>| <font size=5>at steady state: $$\mu = \phi$$ $$\mu = \mu_{max}\frac{S^n}{S^n+K^n}$$ 
+<font size=4>in continuous culture: $$latex \begin{equation*} \begin{aligned} \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)- \phi X(t) \end{aligned} \end{equation*} $$ </font><br/>| <font size=4>at steady state: $$\mu = \phi$$ </font> 
 
+<br/><br/>
 <font size=3>Monod, Annual Review of Microbiology 1949: *The Growth of Bacterial Cultures.*<br/>
 Finn & Wilson, J Agric Food Chem 1954: *Population Dynamics of a Continuous Propagator for Microorganisms.*</font>
 
---- .class #id 
+--- .lineheight
+
+#### Varying Periods
+
+continuous culture|observed periods
+------|------
+|
+<img src="assets/img/fermentor_detailed.png" height="250">|<img src="assets/img/strains_D_t.png" height="250">
+|
+$$latex \begin{equation*} \begin{aligned} \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)- \phi X(t) \\ \frac{\text{d}S(t)}{\text{d}t} =&  \phi (S_{in} - S(t)) - \frac{\mu}{Y} X(t) \end{aligned} \end{equation*} $$| $$\mu = \mu_{max}\frac{S^n}{S^n+K^n}$$ $$Y = \frac{\Delta X}{\Delta S}  $$
+
+<br/><br/>
+<font size=3>Monod, Ann Rev Microbiol 1949: *The Growth of Bacterial Cultures.*<br/>
+Finn & Wilson, J Agric Food Chem 1954: *Population Dynamics of a Continuous Propagator for Microorganisms.*<br/>
+Mochan & Pye, Nature New Biol 1973: *Respiratory oscillations in adapting yeast cultures.*<br/>
+Heinzle *et al.*, 1983: *Modelling of sustained oscillations observed in continuous culture of Saccharomyces cerevisiae.*
+</font>
+
+--- .lineheight
 
 #### Varying Periods
 
@@ -60,6 +102,13 @@ the budding cycle|observed periods
 |
 <img src="assets/img/budding.png" height="180">|<br/><br/>$$\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}$$
 
+
+<font size=3>
+Thompson & Wheals, J Gen Microbiol 1980: *Asymmetrical division of Saccharomyces cerevisiae in glucose-limited chemostat culture.*<br/>
+Klevecz *et al.*, PNAS 2004: *A genomewide oscillation in transcription gates DNA replication and cell cycle.*<br/>
+Burnetti, Aydin & Buchler, Mol Biol Cell 2016: *Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.*
+</font>
+
 --- .class #id
 
 #### Varying Periods ... Constant Gene Expression Profile
@@ -68,82 +117,97 @@ Observed periods| | | |
 ---|---|---|---
 <img src="assets/img/wang15_highD_ranges_major.png" height="120">|CEN.PK 122<br/> $$0.13\; \text{h}^{-1}$$ | <img src="assets/img/tuliCoarse_tu05_timecourse_ranges_major_nrm.png" height="120">| CEN.PK 122<br/>$$0.1\;\text{h}^{-1}$$ 
 <img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120">|  IFO 0233<br/>$$0.09\;\text{h}^{-1}$$ | <img src="assets/img/wang15_lowD_ranges_major.png" height="120">| CEN.PK 122<br/>$$0.05\;\text{h}^{-1}$$
- <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div> | DBY12007<br/>$$\sim \textbf{0}\;\text{h}^{-1}$$ | <img src="assets/img/slavov11_ranges_major.png" height="120">|
+ <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div> | | <img src="assets/img/slavov11_ranges_major.png" height="120">| DBY12007<br/>$$\sim \textbf{0}\;\text{h}^{-1}$$ 
 
 <br/>
 <div style='text-align: right;'>$$\rightarrow \text{live at the brink}$$</div>
 
---- .class #id 
+--- .lineheight .centertext
 
 ### Gene Expression : function
 <br/>
 
-<div style='text-align: center;'><img src="assets/img/clusterDAG_v2_nona.png" height="280"></div>
+<img src="assets/img/clusterDAG_v2_nona.png" height="280">
 
-<br/>
-<div style='text-align: right;'>
-Machne & Murray, PLoS ONE 2012<br/>
+<br/><br/>
+based on *gene ontology* analysis
+
+<br/><br/><br/>
+<font size=3>
+<div style='text-align: left;'>Murray <em>et al.</em>, PNAS 2007: <em>Regulation of yeast oscillatory dynamics.</em><br/>
+Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/> elements of a global feedback system between metabolism and chromatin.</em>
 </div>
+</font>
 
---- .class #id 
+
+--- .centertext
 
 ### Gene Expression : meta-transcriptome
 <br/>
 
-<div style='text-align: center;'><img src="assets/img/machne12_fig2_cropped.png" height="280"></div>
+<img src="assets/img/machne12_fig2_cropped.png" height="280">
 
 <br/>
-<div style='text-align: right;'>
-Machne & Murray, PLoS ONE 2012<br/>
+cluster gene expression in ~1300 microarray experiments
+
+<br/>
+<font size=3>
+<div style='text-align: left;'>Murray <em>et al.</em>, PNAS 2007: <em>Regulation of yeast oscillatory dynamics.</em><br/>
+Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/> elements of a global feedback system between metabolism and chromatin.</em>
 </div>
+</font>
 
---- .class #id 
-
-### Gene Expression & Growth Laws
-<br/>
-
-<div style='text-align: center;'><img src="assets/img/cluster_vs_rates_major.png" height="280"></div>
-
-
-<br/>
-<div style='text-align: right;'>
-Machne & Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011</div>
-
---- .class #id 
+--- .centertext
 
 ### Gene Expression & Growth Laws
 <br/>
 
-<div style='text-align: center;'><img src="assets/img/cluster_vs_doubling_AD.png" height="280"></div>
-
+<img src="assets/img/cluster_vs_rates_major.png" height="280">
 
 <br/>
-<div style='text-align: right;'>
-Machne & Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011</div>
+prediction of growth rate *&mu;* by relative expression of ca. 20 
+signature genes
 
-<div style='text-align: right;'>$$t_D=\frac{\ln(2)}{\mu}$$</div>
+<br/>
+<div  style='text-align: left;'><font size=3> 
+Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em>
+</font></div>
 
---- .class #id 
-<style>
-em {
-  font-style: italic
-}
-</style>
+--- .centertext .lineheight
+
+### Gene Expression & Growth Laws
+<br/>
+
+<img src="assets/img/cluster_vs_doubling_AD.png" height="280">
+
+<br/>
+$$t_D=\frac{\ln(2)}{\mu}$$
+
+<div  style='text-align: left; line-height: 90%;'><font size=3> 
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
+Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
+</font></div>
+
+---  .lineheight
 
 major carbon flux| nucleic acid content|cell
 ---|---|---
-<div style='text-align: center;'><img src="assets/img/data_DW_interpolated_nc.png"  height="140"></div>|<div style='text-align: center;'><img src="assets/img/data_RNA_interpolated_nc.png"  height="140"></div>|
+<img src="assets/img/data_DW_interpolated_nc.png"  height="180">|<img src="assets/img/data_RNA_interpolated_nc.png"  height="180">|<img src="assets/img/data_DW_cell_interpolated_nc.png"  height="180">
 ||
-<div style='text-align: center;'><img src="assets/img/data_EtOH_interpolated_nc.png"  height="140"></div>|<div style='text-align: center;'><img src="assets/img/data_DNA_interpolated_nc.png"  height="140"></div>|
-||
-qco2||<div style='text-align: center;'><img src="assets/img/data_V_cell_interpolated_nc.png"  height="140"></div>
+<img src="assets/img/data_EtOH_interpolated_nc.png"  height="180">|<img src="assets/img/data_DNA_interpolated_nc.png"  height="180">|<img src="assets/img/data_V_cell_interpolated_nc.png"  height="180">
 
 <br/>
-koch1988, &mu; = rib2<br/>
-heijnen92: limiting is membrane space<br/>
-recent trade-off models: protein costs
+With increasing growth rate *&mu;*:<br/> 
+higher RNA & lower DNA content; larger cells, lower biomass & higher ethanol yield!
+
+<br/><br/>
+<font size=3> 
+Schaechter, Maaloe & Kjeldgaard, J Gen Microbiol 1958: *Dependency on medium and temperature of cell size and chemical composition during balanced growth of Salmonella typhimurium.*<br/>
+Koch, Can J Microbiol 1988: *Why can't a cell grow infinitely fast?*<br/>
+Heijnen & Van Dijken, Biotechnol Bioeng 1992: *In search of a thermodynamic description of biomass yields* [...].<br/>
+Wei&szlig;e *et al.*, PNAS 1992: *Mechanistic links between cellular trade-offs, gene expression, and growth.*
+</font>
 
 --- .class #id 
 
@@ -166,21 +230,81 @@ $$   \begin{equation*}
   \end{equation*} $$
 </font>
 
---- .class #id 
+--- .lineheight
 
-## Growth & Stress
+diauxic growth|metabolism
+---|---
+|
+<img src="assets/img/zampar13_growth.png"  height="240">|<img src="assets/img/corecarbon.svg"  height="240">
+|
+<img src="assets/img/fermentor_detailed.png" height="240">|
 
-red/blue genes in batch growth:
 
-<style>
-article body {
-  font-size: 16px;
-}
-</style>
+<font size=3> 
+Zampar *et al.*, Mol Syst Biol 2013: *Temporal system-level organization of the switch from glycolytic to gluconeogenic operation in yeast.*<br/>
+</font>
 
-yeast diauxie: expo phase is not "balanced", slow transition, atp-model?
+--- .lineheight
 
-blue genes!? phase of low energy, stress, differentiation 
+diauxic growth|cell cycle
+---|---
+|
+<img src="assets/img/zampar13_growth.png"  height="240">|
+|
+<img src="assets/img/brauer05_cells.png"  height="240">|
+
+
+<font size=3> 
+Zampar *et al.*, Mol Syst Biol 2013: *Temporal system-level organization of the switch from glycolytic to gluconeogenic operation in yeast.*<br/>
+Brauer *et al.*, Mol Biol Cell 2005: *Homeostatic adjustment and metabolic remodeling in glucose-limited yeast cultures.*
+</font>
+
+
+--- .lineheight
+
+diauxic growth|metabolism
+---|---
+|
+<img src="assets/img/zampar13_growth.png"  height="240">|<img src="assets/img/brauer05_cells.png"  height="240">
+|
+<img src="assets/img/slavov14_growth.png"  height="240">|
+
+
+<font size=3> 
+Zampar *et al.*, Mol Syst Biol 2013: *Temporal system-level organization of the switch from glycolytic to gluconeogenic operation in yeast.*<br/>
+Brauer *et al.*, Mol Biol Cell 2005: *Homeostatic adjustment and metabolic remodeling in glucose-limited yeast cultures.*<br/>
+Slavov *et al.*, Cell Rep 2014: *Constant growth rate can be supported by decreasing energy flux and increasing aerobic glycolysis.*
+</font>
+
+--- .lineheight
+
+diauxic growth|transcription
+---|---
+|
+<img src="assets/img/zampar13_growth.png"  height="240">|<img src="assets/img/brauer05_cells.png"  height="240">
+|
+<img src="assets/img/slavov14_growth.png"  height="240">|<img src="assets/img/slavov14_selected_transcripts.png"  height="240">
+
+<font size=3> 
+Zampar *et al.*, Mol Syst Biol 2013: *Temporal system-level organization of the switch from glycolytic to gluconeogenic operation in yeast.*<br/>
+Brauer *et al.*, Mol Biol Cell 2005: *Homeostatic adjustment and metabolic remodeling in glucose-limited yeast cultures.*<br/>
+Slavov *et al.*, Cell Rep 2014: *Constant growth rate can be supported by decreasing energy flux and increasing aerobic glycolysis.*
+</font>
+
+--- .lineheight
+
+stress|translation vs. P-bodies
+---|---
+|
+<img src="assets/img/slavov14_selected_transcripts.png"  height="240">|<img src="assets/img/slavov14_selected_proteins.png"  height="240">
+|
+<img src="assets/img/zid14_transcripts.png"  height="240">|<img src="assets/img/zid14_proteins.png"  height="240">
+
+
+<font size=3> 
+Slavov *et al.*, Cell Rep 2014: *Constant growth rate can be supported by decreasing energy flux and increasing aerobic glycolysis.*</br>
+Zid & O'Shea, Nature 2014: *Promoter sequences direct cytoplasmic localization and translation of mRNAs during starvation in yeast.*
+</font>
 
 --- .class #id 
 
@@ -223,7 +347,6 @@ after yeast WGD
 
 concepts and tools for cyano/bacteria, coilseq
 
---- .class #id 
 
 
 

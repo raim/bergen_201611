@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gene Expression &amp; Growth in Budding Yeast</title>
+  <title>Gene Expression &amp; Growth &lt;br/&gt;in Budding Yeast</title>
   <meta charset="utf-8">
-  <meta name="description" content="Gene Expression &amp; Growth in Budding Yeast">
+  <meta name="description" content="Gene Expression &amp; Growth &lt;br/&gt;in Budding Yeast">
   <meta name="author" content="Rainer Machne">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -13,7 +13,8 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/my.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
@@ -32,7 +33,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Gene Expression &amp; Growth in Budding Yeast</h1>
+    <h1>Gene Expression &amp; Growth &lt;br/&gt;in Budding Yeast</h1>
     <h2>X-Men Group Retreat, Bergen aan Zee, Nov 2016</h2>
     <p>Rainer Machne<br/></p>
   </hgroup>
@@ -66,12 +67,12 @@ em {
 <td><img src="assets/img/cls_timecourse_major_total_fromLehmann14.png" height="190"></td>
 </tr>
 <tr>
-<td>Paul, the <em>plateypus</em> and <em>E. coli</em>, the stinky bug</td>
-<td>Karl, the <em>segmenTier</em></td>
+<td><em>E. coli</em>  &amp; Paul, the <em>plateypus</em></td>
+<td>RNA-seq &amp; Karl, the <em>segmenTier</em></td>
 </tr>
 <tr>
 <td><img src="assets/img/ecoli_20141014.png" height="160"><img src="assets/img/fritz_the_platypus.gif" height="160"></td>
-<td><img src="assets/img/anadenobolus_arboreus.png" height="140"></td>
+<td><img src="assets/img/anadenobolus_arboreus-90.png" height="160"></td>
 </tr>
 </tbody></table>
 
@@ -81,18 +82,47 @@ em {
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h3><em>E. coli</em> Growth &amp; Gene Expression</h3>
+    <h3>Growth &amp; Gene Expression in <em>E. coli</em></h3>
   </hgroup>
   <article data-timings="">
-    <p><img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230"></p>
+    <p><img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230"><img src="assets/img/Ecoli_20161014_OD_grofit_A8.png" height="250"></p>
 
-<p>\[ \begin{equation*} \begin{aligned}  X(t) =& X(0) \cdot e^{\mu\cdot t}\\ \int X\\ \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)\\ \\t_D &= \frac{\ln(2)}{\mu}  \end{aligned} \end{equation*} \]</p>
+<p>\[ 
+\begin{equation*} \begin{aligned}  
+\frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)\\ 
+X(t) =& X(0)   e^{\mu  t}\\ 
+t_D =& \frac{\ln(2)}{\mu}  
+\end{aligned} \end{equation*} \]</p>
+
+<p><br/>
+<a href="https://github.com/raim/platexpress">https://github.com/raim/platexpress</a> or Paul, the <em>plateypus</em>?</p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h3>Growth &amp; Gene Expression in <em>E. coli</em></h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/ecoli_20141014.png" height="250"><img src="assets/img/fritz_the_platypus.gif" height="230"><img src="assets/img/Ecoli_20161014_OD_growthrates.png" height="250"></p>
+
+<p>\[ 
+\begin{equation*} \begin{aligned}  
+\frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)\\ 
+X(t) =& X(0)   e^{\mu  t}\\ 
+t_D =& \frac{\ln(2)}{\mu}  
+\end{aligned} \end{equation*} \]</p>
+
+<p><br/>
+<a href="https://github.com/raim/platexpress">https://github.com/raim/platexpress</a> or Paul, the <em>plateypus</em>?</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="lineheight" id="slide-4" style="background:;">
   <hgroup>
     <h4>Varying Periods</h4>
   </hgroup>
@@ -116,19 +146,60 @@ em {
 <td></td>
 </tr>
 <tr>
-<td><font size=5>in continuous culture: \[ \begin{equation*} \begin{aligned} \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)- \phi X(t) \end{aligned} \end{equation*} \] </font></td>
-<td><font size=5>at steady state: \[\mu = \phi\] \[\mu = \mu_{max}\frac{S^n}{S^n+K^n}\]</td>
+<td><font size=4>in continuous culture: \[ \begin{equation*} \begin{aligned} \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)- \phi X(t) \end{aligned} \end{equation*} \] </font><br/></td>
+<td><font size=4>at steady state: \[\mu = \phi\] </font></td>
 </tr>
 </tbody></table>
 
-<p><font size=3>Monod, Annual Review of Microbiology 1949: <em>The Growth of Bacterial Cultures.</em><br/>
+<p><br/><br/>
+<font size=3>Monod, Annual Review of Microbiology 1949: <em>The Growth of Bacterial Cultures.</em><br/>
 Finn &amp; Wilson, J Agric Food Chem 1954: <em>Population Dynamics of a Continuous Propagator for Microorganisms.</em></font></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="lineheight" id="slide-5" style="background:;">
+  <hgroup>
+    <h4>Varying Periods</h4>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>continuous culture</th>
+<th>observed periods</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/fermentor_detailed.png" height="250"></td>
+<td><img src="assets/img/strains_D_t.png" height="250"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>\[ \begin{equation*} \begin{aligned} \frac{\text{d}X(t)}{\text{d}t} =& \mu X(t)- \phi X(t) \\ \frac{\text{d}S(t)}{\text{d}t} =&  \phi (S_{in} - S(t)) - \frac{\mu}{Y} X(t) \end{aligned} \end{equation*} \]</td>
+<td>\[\mu = \mu_{max}\frac{S^n}{S^n+K^n}\] \[Y = \frac{\Delta X}{\Delta S}  \]</td>
+</tr>
+</tbody></table>
+
+<p><br/><br/>
+<font size=3>Monod, Ann Rev Microbiol 1949: <em>The Growth of Bacterial Cultures.</em><br/>
+Finn &amp; Wilson, J Agric Food Chem 1954: <em>Population Dynamics of a Continuous Propagator for Microorganisms.</em><br/>
+Mochan &amp; Pye, Nature New Biol 1973: <em>Respiratory oscillations in adapting yeast cultures.</em><br/>
+Heinzle <em>et al.</em>, 1983: <em>Modelling of sustained oscillations observed in continuous culture of Saccharomyces cerevisiae.</em>
+</font></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="lineheight" id="slide-6" style="background:;">
   <hgroup>
     <h4>Varying Periods</h4>
   </hgroup>
@@ -156,6 +227,12 @@ Finn &amp; Wilson, J Agric Food Chem 1954: <em>Population Dynamics of a Continuo
 <td><br/><br/>\[\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}\]</td>
 </tr>
 </tbody></table>
+
+<p><font size=3>
+Thompson &amp; Wheals, J Gen Microbiol 1980: <em>Asymmetrical division of Saccharomyces cerevisiae in glucose-limited chemostat culture.</em><br/>
+Klevecz <em>et al.</em>, PNAS 2004: <em>A genomewide oscillation in transcription gates DNA replication and cell cycle.</em><br/>
+Burnetti, Aydin &amp; Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
+</font></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -188,9 +265,9 @@ Finn &amp; Wilson, J Agric Food Chem 1954: <em>Population Dynamics of a Continuo
 </tr>
 <tr>
 <td><br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div></td>
-<td>DBY12007<br/>\[\sim \textbf{0}\;\text{h}^{-1}\]</td>
-<td><img src="assets/img/slavov11_ranges_major.png" height="120"></td>
 <td></td>
+<td><img src="assets/img/slavov11_ranges_major.png" height="120"></td>
+<td>DBY12007<br/>\[\sim \textbf{0}\;\text{h}^{-1}\]</td>
 </tr>
 </tbody></table>
 
@@ -202,93 +279,104 @@ Finn &amp; Wilson, J Agric Food Chem 1954: <em>Population Dynamics of a Continuo
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="lineheight centertext" id="slide-8" style="background:;">
   <hgroup>
     <h3>Gene Expression : function</h3>
   </hgroup>
   <article data-timings="">
     <p><br/></p>
 
-<div style='text-align: center;'><img src="assets/img/clusterDAG_v2_nona.png" height="280"></div>
+<p><img src="assets/img/clusterDAG_v2_nona.png" height="280"></p>
 
-<p><br/></p>
+<p><br/><br/>
+based on <em>gene ontology</em> analysis</p>
 
-<div style='text-align: right;'>
-Machne & Murray, PLoS ONE 2012<br/>
+<p><br/><br/><br/>
+<font size=3></p>
+
+<div style='text-align: left;'>Murray <em>et al.</em>, PNAS 2007: <em>Regulation of yeast oscillatory dynamics.</em><br/>
+Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/> elements of a global feedback system between metabolism and chromatin.</em>
 </div>
+
+<p></font></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="centertext" id="slide-9" style="background:;">
   <hgroup>
     <h3>Gene Expression : meta-transcriptome</h3>
   </hgroup>
   <article data-timings="">
     <p><br/></p>
 
-<div style='text-align: center;'><img src="assets/img/machne12_fig2_cropped.png" height="280"></div>
+<p><img src="assets/img/machne12_fig2_cropped.png" height="280"></p>
 
-<p><br/></p>
+<p><br/>
+cluster gene expression in ~1300 microarray experiments</p>
 
-<div style='text-align: right;'>
-Machne & Murray, PLoS ONE 2012<br/>
+<p><br/>
+<font size=3></p>
+
+<div style='text-align: left;'>Murray <em>et al.</em>, PNAS 2007: <em>Regulation of yeast oscillatory dynamics.</em><br/>
+Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/> elements of a global feedback system between metabolism and chromatin.</em>
 </div>
 
+<p></font></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="centertext" id="slide-10" style="background:;">
   <hgroup>
     <h3>Gene Expression &amp; Growth Laws</h3>
   </hgroup>
   <article data-timings="">
     <p><br/></p>
 
-<div style='text-align: center;'><img src="assets/img/cluster_vs_rates_major.png" height="280"></div>
+<p><img src="assets/img/cluster_vs_rates_major.png" height="280"></p>
+
+<p><br/>
+prediction of growth rate <em>&mu;</em> by relative expression of ca. 20 
+signature genes</p>
 
 <p><br/></p>
 
-<div style='text-align: right;'>
-Machne & Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011</div>
+<div  style='text-align: left;'><font size=3> 
+Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em>
+</font></div>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="centertext lineheight" id="slide-11" style="background:;">
   <hgroup>
     <h3>Gene Expression &amp; Growth Laws</h3>
   </hgroup>
   <article data-timings="">
     <p><br/></p>
 
-<div style='text-align: center;'><img src="assets/img/cluster_vs_doubling_AD.png" height="280"></div>
+<p><img src="assets/img/cluster_vs_doubling_AD.png" height="280"></p>
 
-<p><br/></p>
+<p><br/>
+\[t_D=\frac{\ln(2)}{\mu}\]</p>
 
-<div style='text-align: right;'>
-Machne & Murray, PLoS ONE 2012<br/>
-Slavov et al., Mol Biol Cell 2011</div>
-
-<div style='text-align: right;'>$$t_D=\frac{\ln(2)}{\mu}$$</div>
+<div  style='text-align: left; line-height: 90%;'><font size=3> 
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
+Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
+</font></div>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="lineheight" id="slide-12" style="background:;">
   <article data-timings="">
-    <style>
-em {
-  font-style: italic
-}
-</style>
-
-<table><thead>
+    <table><thead>
 <tr>
 <th>major carbon flux</th>
 <th>nucleic acid content</th>
@@ -296,9 +384,9 @@ em {
 </tr>
 </thead><tbody>
 <tr>
-<td><div style='text-align: center;'><img src="assets/img/data_DW_interpolated_nc.png"  height="140"></div></td>
-<td><div style='text-align: center;'><img src="assets/img/data_RNA_interpolated_nc.png"  height="140"></div></td>
-<td></td>
+<td><img src="assets/img/data_DW_interpolated_nc.png"  height="180"></td>
+<td><img src="assets/img/data_RNA_interpolated_nc.png"  height="180"></td>
+<td><img src="assets/img/data_DW_cell_interpolated_nc.png"  height="180"></td>
 </tr>
 <tr>
 <td></td>
@@ -306,26 +394,23 @@ em {
 <td></td>
 </tr>
 <tr>
-<td><div style='text-align: center;'><img src="assets/img/data_EtOH_interpolated_nc.png"  height="140"></div></td>
-<td><div style='text-align: center;'><img src="assets/img/data_DNA_interpolated_nc.png"  height="140"></div></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>qco2</td>
-<td></td>
-<td><div style='text-align: center;'><img src="assets/img/data_V_cell_interpolated_nc.png"  height="140"></div></td>
+<td><img src="assets/img/data_EtOH_interpolated_nc.png"  height="180"></td>
+<td><img src="assets/img/data_DNA_interpolated_nc.png"  height="180"></td>
+<td><img src="assets/img/data_V_cell_interpolated_nc.png"  height="180"></td>
 </tr>
 </tbody></table>
 
 <p><br/>
-koch1988, &mu; = rib2<br/>
-heijnen92: limiting is membrane space<br/>
-recent trade-off models: protein costs</p>
+With increasing growth rate <em>&mu;</em>:<br/> 
+higher RNA &amp; lower DNA content; larger cells, lower biomass &amp; higher ethanol yield!</p>
+
+<p><br/><br/>
+<font size=3> 
+Schaechter, Maaloe &amp; Kjeldgaard, J Gen Microbiol 1958: <em>Dependency on medium and temperature of cell size and chemical composition during balanced growth of Salmonella typhimurium.</em><br/>
+Koch, Can J Microbiol 1988: <em>Why can&#39;t a cell grow infinitely fast?</em><br/>
+Heijnen &amp; Van Dijken, Biotechnol Bioeng 1992: <em>In search of a thermodynamic description of biomass yields</em> [...].<br/>
+Wei&szlig;e <em>et al.</em>, PNAS 1992: <em>Mechanistic links between cellular trade-offs, gene expression, and growth.</em>
+</font></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -368,22 +453,177 @@ recent trade-off models: protein costs</p>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h2>Growth &amp; Stress</h2>
-  </hgroup>
+<slide class="lineheight" id="slide-14" style="background:;">
   <article data-timings="">
-    <p>red/blue genes in batch growth:</p>
+    <table><thead>
+<tr>
+<th>diauxic growth</th>
+<th>metabolism</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/zampar13_growth.png"  height="240"></td>
+<td><img src="assets/img/corecarbon.svg"  height="240"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/fermentor_detailed.png" height="240"></td>
+<td></td>
+</tr>
+</tbody></table>
 
-<style>
-article body {
-  font-size: 16px;
-}
-</style>
+<p><font size=3> 
+Zampar <em>et al.</em>, Mol Syst Biol 2013: <em>Temporal system-level organization of the switch from glycolytic to gluconeogenic operation in yeast.</em><br/>
+</font></p>
 
-<p>yeast diauxie: expo phase is not &quot;balanced&quot;, slow transition, atp-model?</p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<p>blue genes!? phase of low energy, stress, differentiation </p>
+<slide class="lineheight" id="slide-15" style="background:;">
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>diauxic growth</th>
+<th>cell cycle</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/zampar13_growth.png"  height="240"></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/brauer05_cells.png"  height="240"></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><font size=3> 
+Zampar <em>et al.</em>, Mol Syst Biol 2013: <em>Temporal system-level organization of the switch from glycolytic to gluconeogenic operation in yeast.</em><br/>
+Brauer <em>et al.</em>, Mol Biol Cell 2005: <em>Homeostatic adjustment and metabolic remodeling in glucose-limited yeast cultures.</em>
+</font></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="lineheight" id="slide-16" style="background:;">
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>diauxic growth</th>
+<th>metabolism</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/zampar13_growth.png"  height="240"></td>
+<td><img src="assets/img/brauer05_cells.png"  height="240"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/slavov14_growth.png"  height="240"></td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><font size=3> 
+Zampar <em>et al.</em>, Mol Syst Biol 2013: <em>Temporal system-level organization of the switch from glycolytic to gluconeogenic operation in yeast.</em><br/>
+Brauer <em>et al.</em>, Mol Biol Cell 2005: <em>Homeostatic adjustment and metabolic remodeling in glucose-limited yeast cultures.</em><br/>
+Slavov <em>et al.</em>, Cell Rep 2014: <em>Constant growth rate can be supported by decreasing energy flux and increasing aerobic glycolysis.</em>
+</font></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="lineheight" id="slide-17" style="background:;">
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>diauxic growth</th>
+<th>transcription</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/zampar13_growth.png"  height="240"></td>
+<td><img src="assets/img/brauer05_cells.png"  height="240"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/slavov14_growth.png"  height="240"></td>
+<td><img src="assets/img/slavov14_selected_transcripts.png"  height="240"></td>
+</tr>
+</tbody></table>
+
+<p><font size=3> 
+Zampar <em>et al.</em>, Mol Syst Biol 2013: <em>Temporal system-level organization of the switch from glycolytic to gluconeogenic operation in yeast.</em><br/>
+Brauer <em>et al.</em>, Mol Biol Cell 2005: <em>Homeostatic adjustment and metabolic remodeling in glucose-limited yeast cultures.</em><br/>
+Slavov <em>et al.</em>, Cell Rep 2014: <em>Constant growth rate can be supported by decreasing energy flux and increasing aerobic glycolysis.</em>
+</font></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="lineheight" id="slide-18" style="background:;">
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th>stress</th>
+<th>translation vs. P-bodies</th>
+</tr>
+</thead><tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/slavov14_selected_transcripts.png"  height="240"></td>
+<td><img src="assets/img/slavov14_selected_proteins.png"  height="240"></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><img src="assets/img/zid14_transcripts.png"  height="240"></td>
+<td><img src="assets/img/zid14_proteins.png"  height="240"></td>
+</tr>
+</tbody></table>
+
+<p><font size=3> 
+Slavov <em>et al.</em>, Cell Rep 2014: <em>Constant growth rate can be supported by decreasing energy flux and increasing aerobic glycolysis.</em></br>
+Zid &amp; O&#39;Shea, Nature 2014: <em>Promoter sequences direct cytoplasmic localization and translation of mRNAs during starvation in yeast.</em>
+</font></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -453,13 +693,6 @@ after yeast WGD</p>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
-  <article data-timings="">
-    
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
     <slide class="backdrop"></slide>
   </slides>
   <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
@@ -472,13 +705,13 @@ after yeast WGD</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='<em>E. coli</em> Growth &amp; Gene Expression'>
+        data-slide=2 title='Growth &amp; Gene Expression in <em>E. coli</em>'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Varying Periods'>
+        data-slide=3 title='Growth &amp; Gene Expression in <em>E. coli</em>'>
          3
       </a>
     </li>
@@ -490,79 +723,79 @@ after yeast WGD</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='Varying Periods ... Constant Gene Expression Profile'>
+        data-slide=5 title='Varying Periods'>
          5
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Gene Expression : function'>
+        data-slide=6 title='Varying Periods'>
          6
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Gene Expression : meta-transcriptome'>
+        data-slide=7 title='Varying Periods ... Constant Gene Expression Profile'>
          7
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=8 title='Gene Expression &amp; Growth Laws'>
+        data-slide=8 title='Gene Expression : function'>
          8
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=9 title='Gene Expression &amp; Growth Laws'>
+        data-slide=9 title='Gene Expression : meta-transcriptome'>
          9
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=10 title='NA'>
+        data-slide=10 title='Gene Expression &amp; Growth Laws'>
          10
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=11 title='A Working Hypothesis: Life&#39;s Fundamental Feedbacks'>
+        data-slide=11 title='Gene Expression &amp; Growth Laws'>
          11
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=12 title='Growth &amp; Stress'>
+        data-slide=12 title='NA'>
          12
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Stress &amp; Cell Structure'>
+        data-slide=13 title='A Working Hypothesis: Life&#39;s Fundamental Feedbacks'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Stress &amp; Chromatin'>
+        data-slide=14 title='NA'>
          14
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title='Working Hypothesis: Chromatin Remodeling'>
+        data-slide=15 title='NA'>
          15
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=16 title='Stress &amp; Pervasive Transcription in Yeast'>
+        data-slide=16 title='NA'>
          16
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=17 title='THE END'>
+        data-slide=17 title='NA'>
          17
       </a>
     </li>
@@ -570,6 +803,36 @@ after yeast WGD</p>
       <a href="#" target="_self" rel='tooltip' 
         data-slide=18 title='NA'>
          18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Stress &amp; Cell Structure'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='Stress &amp; Chromatin'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='Working Hypothesis: Chromatin Remodeling'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Stress &amp; Pervasive Transcription in Yeast'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='THE END'>
+         23
       </a>
     </li>
   </ul>

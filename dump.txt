@@ -2,3 +2,46 @@
 <div style='text-align: center;'><img src="assets/img/fermentor_detailed.png" height="200"></div>|$$ \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} &= + \mu X - \phi X  \\   \frac{\text{d}S}{\text{d}t} &= - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \mu =& \mu_{max} \frac{S^n}{S^n+K_S^n};\;      y = a + b \cdot S \end{aligned}  \end{equation*} $$
 
 $$latex \begin{equation*} \begin{aligned} \frac{\text{d}X}{\text{d}t} =& + \mu X - \phi X  \\ \mu =& \mu_{max}\frac{S^n}{S^n+K^n} \\ \frac{\text{d}S}{\text{d}t} =& - \frac{\mu}{y} X + \phi (S_{in} - S)\\\hline \; y = \frac{\Delta X}{\Delta S}  \end{aligned} \end{equation*} $$ | <br/><font size=5>at steady state: $$\mu = \phi$$ growth rate = dilution rate</font>
+
+\int_{X(0)}^{X(t)} \frac{\text{d}X}{X} =& \int_0^t \mu \text{d} t\\
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<font size=3>
+Machne & Murray, PLoS ONE 2012: *The yin and yang of yeast transcription: elements of a global feedback system between metabolism and chromatin.*
+</font>
+
+<br/>
+<div style='text-align: right;'>
+Machne & Murray, PLoS ONE 2012<br/>
+Brauer <i>et al.</i>, Mol Biol Cell 2008<br/>
+Slavov <i>et al.</i>, Mol Biol Cell 2011
+</div>
+
+yeast diauxie: expo phase is not "balanced", slow transition, atp-model?
+
+blue genes!? phase of low energy, stress, differentiation 
+
+
+X(t_2) = 2   X(t_1) =& X(t_1)   e^{\mu   (t_2-t_1)}\\
+2  =& e^{\mu   (t_2-t_1)}\\
+
+<style>
+table{	
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 1000px;
+}
+
+th, td {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 500px;
+}
+</style>
