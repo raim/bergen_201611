@@ -75,7 +75,7 @@ Finn & Wilson, J Agric Food Chem 1954: *Population Dynamics of a Continuous Prop
 
 --- .lineheight
 
-#### Varying Periods
+#### Varying Periods at Balanced Growth
 
 continuous culture|observed periods
 ------|------
@@ -93,12 +93,12 @@ Heinzle *et al.*, 1983: *Modelling of sustained oscillations observed in continu
 
 --- .lineheight
 
-#### Varying Periods
+#### Varying Periods & the Cell Cycle?
 
 the budding cycle|observed periods
 ------|------
 |
-<br/><img src="assets/img/thompson80_fig1.png" height="200">|<img src="assets/img/zoom_T2_t.png" height="250">
+<br/><img src="assets/img/thompson80_fig1_t2.png" height="220">|<img src="assets/img/zoom_T2_t.png" height="250">
 |
 <img src="assets/img/budding.png" height="180">|<br/><br/>$$\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}$$
 
@@ -189,11 +189,26 @@ Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate respo
 Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
 </font></div>
 
+--- .centertext .lineheight
+
+### Gene Expression & Growth Laws
+<br/>
+
+<img src="assets/img/cluster_vs_doubling_AD.png" height="280"><img src="assets/img/zoom_T2_t.png" height="240">
+
+<br/>
+$$t_D=\frac{\ln(2)}{\mu}$$
+
+<div  style='text-align: left; line-height: 90%;'><font size=3> 
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
+Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
+</font></div>
+
 ---  .lineheight
 
 major carbon flux| nucleic acid content|cell
 ---|---|---
-<img src="assets/img/data_DW_interpolated_nc.png"  height="180">|<img src="assets/img/data_RNA_interpolated_nc.png"  height="180">|<img src="assets/img/data_DW_cell_interpolated_nc.png"  height="180">
+<img src="assets/img/data_DW_interpolated_nc.png"  height="180">|<img src="assets/img/data_RNA_interpolated_nc.png"  height="180">|<img src="assets/img/thompson80_fig1.png"  height="180">
 ||
 <img src="assets/img/data_EtOH_interpolated_nc.png"  height="180">|<img src="assets/img/data_DNA_interpolated_nc.png"  height="180">|<img src="assets/img/data_V_cell_interpolated_nc.png"  height="180">
 
