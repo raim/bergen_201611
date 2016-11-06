@@ -129,10 +129,10 @@ Observed periods| | | |
 
 <img src="assets/img/clusterDAG_v2_nona.png" height="280">
 
-<br/><br/>
+<br/>
 based on *gene ontology* analysis
 
-<br/><br/><br/>
+<br/><br/>
 <font size=3>
 <div style='text-align: left;'>Murray <em>et al.</em>, PNAS 2007: <em>Regulation of yeast oscillatory dynamics.</em><br/>
 Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/> elements of a global feedback system between metabolism and chromatin.</em>
@@ -140,7 +140,7 @@ Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/
 </font>
 
 
---- .centertext
+--- .lineheight .centertext
 
 ### Gene Expression : meta-transcriptome
 <br/>
@@ -150,14 +150,14 @@ Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/
 <br/>
 cluster gene expression in ~1300 microarray experiments
 
-<br/>
+<br/><br/>
 <font size=3>
 <div style='text-align: left;'>Murray <em>et al.</em>, PNAS 2007: <em>Regulation of yeast oscillatory dynamics.</em><br/>
 Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/> elements of a global feedback system between metabolism and chromatin.</em>
 </div>
 </font>
 
---- .centertext
+--- .lineheight .centertext
 
 ### Gene Expression & Growth Laws
 <br/>
@@ -165,8 +165,7 @@ Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/
 <img src="assets/img/cluster_vs_rates_major.png" height="280">
 
 <br/>
-prediction of growth rate *&mu;* by relative expression of ca. 20 
-signature genes
+\(\mu \sim \frac{red}{blue}\)
 
 <br/>
 <div  style='text-align: left;'><font size=3> 
@@ -182,8 +181,9 @@ Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate respo
 <img src="assets/img/cluster_vs_doubling_AD.png" height="280">
 
 <br/>
-$$t_D=\frac{\ln(2)}{\mu}$$
+\(t_D=\frac{\ln(2)}{\mu}\)
 
+<br/>
 <div  style='text-align: left; line-height: 90%;'><font size=3> 
 Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
 Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
@@ -197,8 +197,9 @@ Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled t
 <img src="assets/img/cluster_vs_doubling_AD.png" height="280"><img src="assets/img/zoom_T2_t.png" height="240">
 
 <br/>
-$$t_D=\frac{\ln(2)}{\mu}$$
+\(t_D=\frac{\ln(2)}{\mu}\)
 
+<br/>
 <div  style='text-align: left; line-height: 90%;'><font size=3> 
 Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
 Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
@@ -224,14 +225,25 @@ Heijnen & Van Dijken, Biotechnol Bioeng 1992: *In search of a thermodynamic desc
 Wei&szlig;e *et al.*, PNAS 1992: *Mechanistic links between cellular trade-offs, gene expression, and growth.*
 </font>
 
---- .class #id 
+---  &twocol .lineheight
 
-### A Working Hypothesis: Life's Fundamental Feedbacks
 
-culture level|cellular level
----|---
-|
-<img src="assets/img/basic_feedback.png"  height="180">|<img src="assets/img/model_feedback.png"  height="220">
+*** =left
+#### Summary:<br/>Growth & Gene Expression
+<br/>
+
+1. Growth Rate vs. Protein Expression Trade-off
+2. Respiratory Oscillation:<br/>varying periods != cell division cycle
+3. Anti-correlation: Red \(\leftrightarrow\) Blue Genes
+4. Relative Red/Blue Gene Expression<br/>
+correlates with growth rate *&mu;*<br/>
+and with major cellular restructuring
+
+<img src="assets/img/basic_feedback.png"  height="140">
+
+*** =right
+#### A Working Hypothesis: Life's Fundamental Feedbacks
+<br/><br/>
 
 <font size=3>
 $$   \begin{equation*}
@@ -244,6 +256,9 @@ $$   \begin{equation*}
      \end{aligned}
   \end{equation*} $$
 </font>
+<br/><br/>
+
+<img src="assets/img/model_feedback.png"  height="180">
 
 --- .lineheight
 
