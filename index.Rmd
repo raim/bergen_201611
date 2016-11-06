@@ -100,13 +100,13 @@ the budding cycle|observed periods
 |
 <br/><img src="assets/img/thompson80_fig1_t2.png" height="220">|<img src="assets/img/zoom_T2_t.png" height="250">
 |
-<img src="assets/img/budding.png" height="180">|<br/><br/>$$\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}$$
+<img src="assets/img/budding.svg" height="180">|$$\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \\ \frac{t_O}{2} = t_P &= \frac{\ln\frac{1+\sqrt{5}}{2}}{\mu} \end{aligned} \end{equation*}$$
 
 
 <font size=3>
 Thompson & Wheals, J Gen Microbiol 1980: *Asymmetrical division of Saccharomyces cerevisiae in glucose-limited chemostat culture.*<br/>
-Klevecz *et al.*, PNAS 2004: *A genomewide oscillation in transcription gates DNA replication and cell cycle.*<br/>
-Burnetti, Aydin & Buchler, Mol Biol Cell 2016: *Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.*
+Duboc, Philippe & von Stockar, Chem Eng Sci 2000: *Modeling of oscillating cultivations of Saccharomyces cerevisiae* [...].<br/>
+Klevecz *et al.*, PNAS 2004: *A genomewide oscillation in transcription gates DNA replication and cell cycle.*
 </font>
 
 --- .class #id
@@ -115,9 +115,9 @@ Burnetti, Aydin & Buchler, Mol Biol Cell 2016: *Cell cycle Start is coupled to e
 
 Observed periods| | | |
 ---|---|---|---
-<img src="assets/img/wang15_highD_ranges_major.png" height="120">|CEN.PK 122<br/> $$0.13\; \text{h}^{-1}$$ | <img src="assets/img/tuliCoarse_tu05_timecourse_ranges_major_nrm.png" height="120">| CEN.PK 122<br/>$$0.1\;\text{h}^{-1}$$ 
-<img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120">|  IFO 0233<br/>$$0.09\;\text{h}^{-1}$$ | <img src="assets/img/wang15_lowD_ranges_major.png" height="120">| CEN.PK 122<br/>$$0.05\;\text{h}^{-1}$$
- <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div> | | <img src="assets/img/slavov11_ranges_major.png" height="120">| DBY12007<br/>$$\sim \textbf{0}\;\text{h}^{-1}$$ 
+<img src="assets/img/wang15_highD_ranges_major.png" height="120">|CEN.PK 122<br/>\(\phi=0.13\;\text{h}^{-1}\)<br/>\(t_D=5.3\;\text{h}\)<br/>\(t_O=2\;\text{h}\) | <img src="assets/img/tuliCoarse_tu05_timecourse_ranges_major_nrm.png" height="120">| CEN.PK 122<br/>\(0.1\;\text{h}^{-1}\) <br/>\(t_D=6.9\;\text{h}\) <br/>\(t_O=5\;\text{h}\)
+<img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120">|  IFO 0233<br/>\(0.09\;\text{h}^{-1}\)<br/>\(t_D=7.7\;\text{h}\) <br/>\(t_O=0.7\;\text{h}\) | <img src="assets/img/wang15_lowD_ranges_major.png" height="120">| CEN.PK 122<br/>\(0.05\;\text{h}^{-1}\)<br/>\(t_D=13.9\;\text{h}\) <br/>\(t_O=7\;\text{h}\)
+ <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div> | | <img src="assets/img/slavov11_ranges_major.png" height="120">| DBY12007<br/>\(\sim \textbf{0}\;\text{h}^{-1}\) <br/>\(t_D=\inf \;\text{h}\) <br/>\(t_O=4\;\text{h}\)
 
 <br/>
 <div style='text-align: right;'>$$\rightarrow \text{live at the brink}$$</div>
@@ -165,12 +165,29 @@ Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/
 <img src="assets/img/cluster_vs_rates_major.png" height="280">
 
 <br/>
-\(\mu \sim \frac{red}{blue}\)
+\(\mu \sim \frac{\text{red genes}}{\text{blue genes}}\)
 
 <br/>
 <div  style='text-align: left;'><font size=3> 
 Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
-Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em>
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
+</font></div>
+
+--- .lineheight .centertext
+
+### Gene Expression & Growth Laws
+<br/>
+
+<img src="assets/img/cluster_vs_rates_major.png" height="280">
+
+<br/>
+\(\mu = k \frac{\text{ribosomes}}{\text{proteins}}\)
+
+<br/>
+<div  style='text-align: left;'><font size=3> 
+Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
+<b>Koch, Can J Microbiol 1988: <em>Why can't a cell grow infinitely fast?</em></b><br/>
 </font></div>
 
 --- .centertext .lineheight
@@ -179,22 +196,6 @@ Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate respo
 <br/>
 
 <img src="assets/img/cluster_vs_doubling_AD.png" height="280">
-
-<br/>
-\(t_D=\frac{\ln(2)}{\mu}\)
-
-<br/>
-<div  style='text-align: left; line-height: 90%;'><font size=3> 
-Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
-Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
-</font></div>
-
---- .centertext .lineheight
-
-### Gene Expression & Growth Laws
-<br/>
-
-<img src="assets/img/cluster_vs_doubling_AD.png" height="280"><img src="assets/img/zoom_T2_t.png" height="240">
 
 <br/>
 \(t_D=\frac{\ln(2)}{\mu}\)
@@ -219,8 +220,8 @@ higher RNA & lower DNA content; larger cells, lower biomass & higher ethanol yie
 
 <br/><br/>
 <font size=3> 
+<b>Koch, Can J Microbiol 1988: *Why can't a cell grow infinitely fast?*</b><br/>
 Schaechter, Maaloe & Kjeldgaard, J Gen Microbiol 1958: *Dependency on medium and temperature of cell size and chemical composition during balanced growth of Salmonella typhimurium.*<br/>
-Koch, Can J Microbiol 1988: *Why can't a cell grow infinitely fast?*<br/>
 Heijnen & Van Dijken, Biotechnol Bioeng 1992: *In search of a thermodynamic description of biomass yields* [...].<br/>
 Wei&szlig;e *et al.*, PNAS 1992: *Mechanistic links between cellular trade-offs, gene expression, and growth.*
 </font>
@@ -338,31 +339,23 @@ Zid & O'Shea, Nature 2014: *Promoter sequences direct cytoplasmic localization a
 
 --- .class #id 
 
-### Stress & Cell Structure 
-
-[//]: # (Comment ![Fritz](assets/img/fritz_the_platypus.gif))
-
-cells are well prepared for stress: differentiation
-
-stress: P-bodies form, cell becomes granular, phase-transition
-
-show osci water structure paper
-
---- .class #id 
-
 ### Stress & Chromatin
 
-amariei: three phases of nucleosome condensation
-
---- .class #id 
-
-### Working Hypothesis: Chromatin Remodeling
+amariei: pol fall off, total mRNA at minimum  and nucleosomes focus at 
+ATP/ADP minimum
 
 -> model chromatin remodeling, but ATP/ADP general, electron transport chain
 
 --- .class #id 
 
-### Stress & Pervasive Transcription in Yeast
+### Stress & Chromatin
+
+![Fritz](assets/img/nucl_nocetti16_movie_AD.gif)
+![Fritz](assets/img/nucl_amariei14_movie_AD.gif)
+
+--- .class #id 
+
+### Pervasive Transcription 
 
 RNAseq data!
 

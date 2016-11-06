@@ -223,15 +223,15 @@ Heinzle <em>et al.</em>, 1983: <em>Modelling of sustained oscillations observed 
 <td></td>
 </tr>
 <tr>
-<td><img src="assets/img/budding.png" height="180"></td>
-<td><br/><br/>\[\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \end{aligned} \end{equation*}\]</td>
+<td><img src="assets/img/budding.svg" height="180"></td>
+<td>\[\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \\ \frac{t_O}{2} = t_P &= \frac{\ln\frac{1+\sqrt{5}}{2}}{\mu} \end{aligned} \end{equation*}\]</td>
 </tr>
 </tbody></table>
 
 <p><font size=3>
 Thompson &amp; Wheals, J Gen Microbiol 1980: <em>Asymmetrical division of Saccharomyces cerevisiae in glucose-limited chemostat culture.</em><br/>
-Klevecz <em>et al.</em>, PNAS 2004: <em>A genomewide oscillation in transcription gates DNA replication and cell cycle.</em><br/>
-Burnetti, Aydin &amp; Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
+Duboc, Philippe &amp; von Stockar, Chem Eng Sci 2000: <em>Modeling of oscillating cultivations of Saccharomyces cerevisiae</em> [...].<br/>
+Klevecz <em>et al.</em>, PNAS 2004: <em>A genomewide oscillation in transcription gates DNA replication and cell cycle.</em>
 </font></p>
 
   </article>
@@ -253,21 +253,21 @@ Burnetti, Aydin &amp; Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupl
 </thead><tbody>
 <tr>
 <td><img src="assets/img/wang15_highD_ranges_major.png" height="120"></td>
-<td>CEN.PK 122<br/> \[0.13\; \text{h}^{-1}\]</td>
+<td>CEN.PK 122<br/>\(\phi=0.13\;\text{h}^{-1}\)<br/>\(t_D=5.3\;\text{h}\)<br/>\(t_O=2\;\text{h}\)</td>
 <td><img src="assets/img/tuliCoarse_tu05_timecourse_ranges_major_nrm.png" height="120"></td>
-<td>CEN.PK 122<br/>\[0.1\;\text{h}^{-1}\]</td>
+<td>CEN.PK 122<br/>\(0.1\;\text{h}^{-1}\) <br/>\(t_D=6.9\;\text{h}\) <br/>\(t_O=5\;\text{h}\)</td>
 </tr>
 <tr>
 <td><img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120"></td>
-<td>IFO 0233<br/>\[0.09\;\text{h}^{-1}\]</td>
+<td>IFO 0233<br/>\(0.09\;\text{h}^{-1}\)<br/>\(t_D=7.7\;\text{h}\) <br/>\(t_O=0.7\;\text{h}\)</td>
 <td><img src="assets/img/wang15_lowD_ranges_major.png" height="120"></td>
-<td>CEN.PK 122<br/>\[0.05\;\text{h}^{-1}\]</td>
+<td>CEN.PK 122<br/>\(0.05\;\text{h}^{-1}\)<br/>\(t_D=13.9\;\text{h}\) <br/>\(t_O=7\;\text{h}\)</td>
 </tr>
 <tr>
 <td><br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div></td>
 <td></td>
 <td><img src="assets/img/slavov11_ranges_major.png" height="120"></td>
-<td>DBY12007<br/>\[\sim \textbf{0}\;\text{h}^{-1}\]</td>
+<td>DBY12007<br/>\(\sim \textbf{0}\;\text{h}^{-1}\) <br/>\(t_D=\inf \;\text{h}\) <br/>\(t_O=4\;\text{h}\)</td>
 </tr>
 </tbody></table>
 
@@ -339,36 +339,37 @@ Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/
 <p><img src="assets/img/cluster_vs_rates_major.png" height="280"></p>
 
 <p><br/>
-\(\mu \sim \frac{red}{blue}\)</p>
+\(\mu \sim \frac{\text{red genes}}{\text{blue genes}}\)</p>
 
 <p><br/></p>
 
 <div  style='text-align: left;'><font size=3> 
 Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
-Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em>
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
 </font></div>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="centertext lineheight" id="slide-11" style="background:;">
+<slide class="lineheight centertext" id="slide-11" style="background:;">
   <hgroup>
     <h3>Gene Expression &amp; Growth Laws</h3>
   </hgroup>
   <article data-timings="">
     <p><br/></p>
 
-<p><img src="assets/img/cluster_vs_doubling_AD.png" height="280"></p>
+<p><img src="assets/img/cluster_vs_rates_major.png" height="280"></p>
 
 <p><br/>
-\(t_D=\frac{\ln(2)}{\mu}\)</p>
+\(\mu = k \frac{\text{ribosomes}}{\text{proteins}}\)</p>
 
 <p><br/></p>
 
-<div  style='text-align: left; line-height: 90%;'><font size=3> 
+<div  style='text-align: left;'><font size=3> 
+Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
 Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
-Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
+<b>Koch, Can J Microbiol 1988: <em>Why can't a cell grow infinitely fast?</em></b><br/>
 </font></div>
 
   </article>
@@ -382,7 +383,7 @@ Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled t
   <article data-timings="">
     <p><br/></p>
 
-<p><img src="assets/img/cluster_vs_doubling_AD.png" height="280"><img src="assets/img/zoom_T2_t.png" height="240"></p>
+<p><img src="assets/img/cluster_vs_doubling_AD.png" height="280"></p>
 
 <p><br/>
 \(t_D=\frac{\ln(2)}{\mu}\)</p>
@@ -430,8 +431,8 @@ higher RNA &amp; lower DNA content; larger cells, lower biomass &amp; higher eth
 
 <p><br/><br/>
 <font size=3> 
+<b>Koch, Can J Microbiol 1988: <em>Why can&#39;t a cell grow infinitely fast?</em></b><br/>
 Schaechter, Maaloe &amp; Kjeldgaard, J Gen Microbiol 1958: <em>Dependency on medium and temperature of cell size and chemical composition during balanced growth of Salmonella typhimurium.</em><br/>
-Koch, Can J Microbiol 1988: <em>Why can&#39;t a cell grow infinitely fast?</em><br/>
 Heijnen &amp; Van Dijken, Biotechnol Bioeng 1992: <em>In search of a thermodynamic description of biomass yields</em> [...].<br/>
 Wei&szlig;e <em>et al.</em>, PNAS 1992: <em>Mechanistic links between cellular trade-offs, gene expression, and growth.</em>
 </font></p>
@@ -663,14 +664,13 @@ Zid &amp; O&#39;Shea, Nature 2014: <em>Promoter sequences direct cytoplasmic loc
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h3>Stress &amp; Cell Structure</h3>
+    <h3>Stress &amp; Chromatin</h3>
   </hgroup>
   <article data-timings="">
-    <p>cells are well prepared for stress: differentiation</p>
+    <p>amariei: pol fall off, total mRNA at minimum  and nucleosomes focus at 
+ATP/ADP minimum</p>
 
-<p>stress: P-bodies form, cell becomes granular, phase-transition</p>
-
-<p>show osci water structure paper</p>
+<p>-&gt; model chromatin remodeling, but ATP/ADP general, electron transport chain</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -681,7 +681,8 @@ Zid &amp; O&#39;Shea, Nature 2014: <em>Promoter sequences direct cytoplasmic loc
     <h3>Stress &amp; Chromatin</h3>
   </hgroup>
   <article data-timings="">
-    <p>amariei: three phases of nucleosome condensation</p>
+    <p><img src="assets/img/nucl_nocetti16_movie_AD.gif" alt="Fritz">
+<img src="assets/img/nucl_amariei14_movie_AD.gif" alt="Fritz"></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -689,18 +690,7 @@ Zid &amp; O&#39;Shea, Nature 2014: <em>Promoter sequences direct cytoplasmic loc
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h3>Working Hypothesis: Chromatin Remodeling</h3>
-  </hgroup>
-  <article data-timings="">
-    <p>-&gt; model chromatin remodeling, but ATP/ADP general, electron transport chain</p>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="class" id="id" style="background:;">
-  <hgroup>
-    <h3>Stress &amp; Pervasive Transcription in Yeast</h3>
+    <h3>Pervasive Transcription</h3>
   </hgroup>
   <article data-timings="">
     <p>RNAseq data!</p>
@@ -845,7 +835,7 @@ after yeast WGD</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=20 title='Stress &amp; Cell Structure'>
+        data-slide=20 title='Stress &amp; Chromatin'>
          20
       </a>
     </li>
@@ -857,20 +847,14 @@ after yeast WGD</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=22 title='Working Hypothesis: Chromatin Remodeling'>
+        data-slide=22 title='Pervasive Transcription'>
          22
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=23 title='Stress &amp; Pervasive Transcription in Yeast'>
+        data-slide=23 title='THE END'>
          23
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=24 title='THE END'>
-         24
       </a>
     </li>
   </ul>

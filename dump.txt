@@ -45,3 +45,57 @@ th, td {
     width: 500px;
 }
 </style>
+
+
+Koch 1988:
+
+R/P = 1/k * mu
+
+k*R = mu*P
+
+dR/dt = mu * R ## exponential growth
+dR/dt = k_t * P ## "simply the definition of the relevant pseudo first order rate constant." ???
+
+
+R/P = k_t/mu = 1/k * mu
+
+mu^2 = k_t * k
+
+k .. first order rate constant for protein synthesis per ribosomes
+
+
+t_O = 2 * t_P
+t_P = ln((1+sqrt(5))/2)/mu
+t_D = ln(2)/mu
+
+t_P = ln((1+sqrt(5))/2)/ln(2) * t_D
+
+
+--- .centertext .lineheight
+
+### Gene Expression & Growth Laws
+<br/>
+
+<img src="assets/img/cluster_vs_doubling_AD.png" height="280"><img src="assets/img/zoom_T2_t.png" height="240">
+
+<br/>
+\(\frac{t_O}{2} = t_P =\frac{\ln\frac{1+\sqrt{5}}{2}}{\mu}\)
+
+<br/>
+<div  style='text-align: left; line-height: 90%;'><font size=3> 
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
+Burnetti, Aydin & Buchler, Mol Biol Cell 2016: <em>Cell cycle Start is coupled to entry into the yeast metabolic cycle<br/>across diverse strains and growth rates.</em>
+</font></div>
+
+--- .class #id 
+
+### Stress & Cell Structure 
+
+[//]: # (Comment ![Fritz](assets/img/fritz_the_platypus.gif))
+
+cells are well prepared for stress: differentiation
+
+stress: P-bodies form, cell becomes granular, phase-transition
+
+show osci water structure paper
+
