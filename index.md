@@ -339,6 +339,37 @@ Zid & O'Shea, Nature 2014: *Promoter sequences direct cytoplasmic localization a
 
 --- &twocolbigright
 
+### Gene Expression & Chromatin
+*** =left
+<img src="assets/img/lee07_clusters_major.png"  height="580">
+*** =right
+
+<img src="assets/img/ATP_ADP.png"  height="200">
+
+ATP/ADP ratio oscillates
+
+<img src="assets/img/remodeling_atp.png"  height="200">
+
+Budding Yeast: ATP-dependent Nucleosome Remodeling
+
+--- &twocolbigright
+
+### Gene Expression & Chromatin
+*** =left
+<img src="assets/img/lee07_clusters_major.png"  height="580">
+*** =right
+
+<img src="assets/img/supercoiled_3.png"  height="200">
+
+Bacteria: ATP-dependent DNA Supercoiling
+
+<img src="assets/img/remodeling_atp.png"  height="200">
+
+Budding Yeast: ATP-dependent Nucleosome Remodeling
+
+
+--- &twocolbigright
+
 ### Stress & Chromatin
 
 *** =left
@@ -354,10 +385,24 @@ Zid & O'Shea, Nature 2014: *Promoter sequences direct cytoplasmic localization a
 
 ### Stress & Chromatin
 
-![Fritz](assets/img/nucl_nocetti16_movie_AD.gif)
-![Fritz](assets/img/nucl_amariei14_movie_AD.gif)
+<img src="assets/img/nucl_nocetti16_movie_AD.gif"  height="350">
 
--> model chromatin remodeling, but ATP/ADP general, electron transport chain
+--- &twocolbigright
+
+### <img src="assets/img/segmentier.svg"  height="50">
+
+*** =right
+<img src="assets/img/primseg_00436.png"  height="350">
+
+*** =left
+1. RNA-seq time-series:<br/>get read-counts
+
+2. Pre-segment, <50 kb
+
+3. Cluster each read-count:<br/>
+take DFT, scale, cluster (`kmeans`)
+
+4. Dynamic Programming:<br/> `icor`, `ccor`
 
 --- .class #id 
 
