@@ -24,7 +24,7 @@ ultradian|circadian
 *Saccharomyces cerevisiae*| *Synechocystis* PCC6803
 <img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="180">|<img src="assets/img/cls_timecourse_major_total_fromLehmann14.png" height="190">
 *E. coli*  & Paul, the *plateypus*|RNA-seq & Karl, the *segmenTier*
-<img src="assets/img/ecoli_20141014.png" height="160"><img src="assets/img/fritz_the_platypus.gif" height="160">|<img src="assets/img/anadenobolus_arboreus-90.png" height="160">
+<img src="assets/img/ecoli_20141014.png" height="160"><img src="assets/img/fritz_the_platypus.gif" height="160">|<img src="assets/img/anadenobolus_arboreus-90.png" height="160"><img src="assets/img/segmenTier_srg1.png" height="160">
 
 --- .class #id 
 
@@ -115,9 +115,9 @@ Klevecz *et al.*, PNAS 2004: *A genomewide oscillation in transcription gates DN
 
 Observed periods| | | |
 ---|---|---|---
-<img src="assets/img/wang15_highD_ranges_major.png" height="120">|CEN.PK 122<br/>\(\phi=0.13\;\text{h}^{-1}\)<br/>\(t_D=5.3\;\text{h}\)<br/>\(t_O=2\;\text{h}\) | <img src="assets/img/tuliCoarse_tu05_timecourse_ranges_major_nrm.png" height="120">| CEN.PK 122<br/>\(0.1\;\text{h}^{-1}\) <br/>\(t_D=6.9\;\text{h}\) <br/>\(t_O=5\;\text{h}\)
-<img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120">|  IFO 0233<br/>\(0.09\;\text{h}^{-1}\)<br/>\(t_D=7.7\;\text{h}\) <br/>\(t_O=0.7\;\text{h}\) | <img src="assets/img/wang15_lowD_ranges_major.png" height="120">| CEN.PK 122<br/>\(0.05\;\text{h}^{-1}\)<br/>\(t_D=13.9\;\text{h}\) <br/>\(t_O=7\;\text{h}\)
- <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div> | | <img src="assets/img/slavov11_ranges_major.png" height="120">| DBY12007<br/>\(\sim \textbf{0}\;\text{h}^{-1}\) <br/>\(t_D=\inf \;\text{h}\) <br/>\(t_O=4\;\text{h}\)
+<img src="assets/img/wang15_highD_ranges_major.png" height="120">|CEN.PK 122<br/>\(\phi=0.13\;\text{h}^{-1}\)<br/>\(t_D=5.3\;\text{h}\)<br/>\(t_{osc}=2\;\text{h}\) | <img src="assets/img/tuliCoarse_tu05_timecourse_ranges_major_nrm.png" height="120">| CEN.PK 122<br/>\(\phi=0.1\;\text{h}^{-1}\) <br/>\(t_D=6.9\;\text{h}\) <br/>\(t_{osc}=5\;\text{h}\)
+<img src="assets/img/tuliCoarse_li06_timecourse_ranges_major_nrm.png" height="120">|  IFO 0233<br/>\(\phi=0.09\;\text{h}^{-1}\)<br/>\(t_D=7.7\;\text{h}\) <br/>\(t_{osc}=0.7\;\text{h}\) | <img src="assets/img/wang15_lowD_ranges_major.png" height="120">| CEN.PK 122<br/>\(\phi=0.05\;\text{h}^{-1}\)<br/>\(t_D=13.9\;\text{h}\) <br/>\(t_{osc}=7\;\text{h}\)
+ <br/><div style='text-align: right;'><font size=5>Oscillation without<br/>(much) cell division:</font></div> | | <img src="assets/img/slavov11_ranges_major.png" height="120">| DBY12007<br/>\(\phi= \sim \textbf{0}\;\text{h}^{-1}\) <br/>\(t_D=\infty \;\text{h}\) <br/>\(t_{osc}=4\;\text{h}\)
 
 <br/>
 <div style='text-align: right;'>$$\rightarrow \text{live at the brink}$$</div>
@@ -168,7 +168,7 @@ Machne & Murray, PLoS ONE 2012: <em>The yin and yang of yeast transcription:<br/
 \(\mu \sim \frac{\text{red genes}}{\text{blue genes}}\)
 
 <br/>
-<div  style='text-align: left;'><font size=3> 
+<div  style='text-align: left; line-height: 90%;'><font size=3> 
 Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
 Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
 </font></div>
@@ -184,10 +184,28 @@ Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate respo
 \(\mu = k \frac{\text{ribosomes}}{\text{proteins}}\)
 
 <br/>
-<div  style='text-align: left;'><font size=3> 
+<div  style='text-align: left;line-height: 90%;'><font size=3> 
 Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
 Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
 <b>Koch, Can J Microbiol 1988: <em>Why can't a cell grow infinitely fast?</em></b><br/>
+</font></div>
+
+--- .lineheight .centertext
+
+### Gene Expression & Growth Laws
+<br/>
+
+<img src="assets/img/scott14_fig1b.png" height="280">
+
+<br/>
+\(\mu = k \frac{\text{ribosomes}}{\text{proteins}}\)
+
+<div  style='text-align: left;line-height: 90%;'><font size=3> 
+Brauer <em>et al.</em>, Mol Biol Cell 2008: <em>Coordination of growth rate, cell cycle, stress response, and metabolic activity in yeast.</em><br/>
+Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate response, metabolic cycle, and cell division cycle in yeast.</em><br/>
+<b>Koch, Can J Microbiol 1988: <em>Why can't a cell grow infinitely fast?</em></b><br/>
+Scott <em>et al.</em>, Mol Syst Biol 2014: <em>Emergence of robust growth laws from optimal regulation of ribosome synthesis.</em></br>
+Wei&szlig;e <em>et al.</em>, PNAS 2015: <em>Mechanistic links between cellular trade-offs, gene expression, and growth.</em>
 </font></div>
 
 --- .centertext .lineheight
@@ -195,7 +213,8 @@ Slavov <em>et al.</em>, Mol Biol Cell 2011: <em>Coupling among growth rate respo
 ### Gene Expression & Growth Laws
 <br/>
 
-<img src="assets/img/cluster_vs_doubling_AD.png" height="280">
+<img src="assets/img/cluster_vs_doubling_AD.png" height="280"><img src="assets/img/zoom_T2_t.png" height="280">
+
 
 <br/>
 \(t_D=\frac{\ln(2)}{\mu}\)
@@ -223,7 +242,7 @@ higher RNA & lower DNA content; larger cells, lower biomass & higher ethanol yie
 <b>Koch, Can J Microbiol 1988: *Why can't a cell grow infinitely fast?*</b><br/>
 Schaechter, Maaloe & Kjeldgaard, J Gen Microbiol 1958: *Dependency on medium and temperature of cell size and chemical composition during balanced growth of Salmonella typhimurium.*<br/>
 Heijnen & Van Dijken, Biotechnol Bioeng 1992: *In search of a thermodynamic description of biomass yields* [...].<br/>
-Wei&szlig;e *et al.*, PNAS 1992: *Mechanistic links between cellular trade-offs, gene expression, and growth.*
+Wei&szlig;e *et al.*, PNAS 2015: *Mechanistic links between cellular trade-offs, gene expression, and growth.*
 </font>
 
 ---  &twocol .lineheight
@@ -234,11 +253,12 @@ Wei&szlig;e *et al.*, PNAS 1992: *Mechanistic links between cellular trade-offs,
 <br/>
 
 1. Growth Rate vs. Protein Expression Trade-off
-2. Respiratory Oscillation:<br/>varying periods != cell division cycle
+2. Respiratory Oscillation:<br/>
+\(t_{osc} \sim  t_D\), but <b>no strict coupling!</b>
 3. Anti-correlation: Red \(\leftrightarrow\) Blue Genes
 4. Relative Red/Blue Gene Expression<br/>
-correlates with growth rate *&mu;*<br/>
-and with major cellular restructuring
+\(\mu = k \frac{\text{red genes}}{\text{blues genes}}\) <br/>
+and with <b>major cellular restructuring</b>
 
 <img src="assets/img/basic_feedback.png"  height="140">
 
@@ -350,7 +370,7 @@ ATP/ADP ratio oscillates
 
 <img src="assets/img/remodeling_atp.png"  height="200">
 
-Budding Yeast: ATP-dependent Nucleosome Remodeling
+ATP-dependent Nucleosome Remodeling
 
 --- &twocolbigright
 
@@ -359,14 +379,28 @@ Budding Yeast: ATP-dependent Nucleosome Remodeling
 <img src="assets/img/lee07_clusters_major.png"  height="580">
 *** =right
 
-<img src="assets/img/supercoiled_3.png"  height="200">
+<img src="assets/img/machne12_fig6a.png"  height="200">
 
-Bacteria: ATP-dependent DNA Supercoiling
+ISW2 enriched in blue gene promoters
 
 <img src="assets/img/remodeling_atp.png"  height="200">
 
-Budding Yeast: ATP-dependent Nucleosome Remodeling
+ATP-dependent Nucleosome Remodeling
 
+--- &twocolbigright
+
+### Gene Expression & Chromatin
+*** =left
+<img src="assets/img/lee07_clusters_major.png"  height="580">
+*** =right
+
+<img src="assets/img/machne12_fig9a_top.png"  height="200">
+
+Increased occupancy of blue genes in RSC k.o.
+
+<img src="assets/img/remodeling_atp.png"  height="200">
+
+ATP-dependent Nucleosome Remodeling
 
 --- &twocolbigright
 
@@ -380,12 +414,32 @@ Budding Yeast: ATP-dependent Nucleosome Remodeling
 <img src="assets/img/amariei14_fig3c.png"  height="100">
 <img src="assets/img/amariei14_fig3e-g.png"  height="300">
 
+--- .lineheight
+ 
+### Stress & Chromatin
+
+<img src="assets/img/nucl_amariei14_TSS.png"  height="450"><img src="assets/img/nucl_nocetti16_TSS.png"  height="450">
+
+<font size=3>
+Amariei *et al*, Microb Cell 2014: *Time resolved DNA occupancy dynamics during the respiratory oscillation uncover a global reset point in the yeast growth program.*
+</font>
 
 --- .class #id 
 
-### Stress & Chromatin
 
-<img src="assets/img/nucl_nocetti16_movie_AD.gif"  height="350">
+<img src="assets/img/nocetti16_ranges_major.png"  height="250">
+
+<img src="assets/img/nucl_nocetti16_movie_ts_.gif"  height="350"><img src="assets/img/nucl_nocetti16_movie_.gif"  height="350">
+
+
+Global behaviour similar, but locally different consequences!<br/>
+Sequence-dependence of nucleosome occupancy and rotational positioning.
+
+<br/>
+<font size=3>
+Nocetti & Whitehouse, GenesDevel 2016: *Nucleosome repositioning underlies
+dynamic gene expression.* \(\Leftarrow\) didn't cite us :(
+</font>
 
 --- &twocolbigright
 
@@ -393,6 +447,9 @@ Budding Yeast: ATP-dependent Nucleosome Remodeling
 
 *** =right
 <img src="assets/img/primseg_00436.png"  height="350">
+
+Upstream ncRNA SRG1 regulates SER3, but not in SER33<br/>
+\(\Rightarrow\) potentially new mechanism after yeast WGD
 
 *** =left
 1. RNA-seq time-series:<br/>get read-counts
@@ -404,25 +461,64 @@ take DFT, scale, cluster (`kmeans`)
 
 4. Dynamic Programming:<br/> `icor`, `ccor`
 
---- .class #id 
+--- &twocol
 
-### Pervasive Transcription 
+### Pervasive Transcription During Low Energy Phase!
 
-RNAseq data!
+*** =left
+<img src="assets/img/ana_phases_p0_1.png"  height="250">
+<img src="assets/img/low_phases_p0_1.png"  height="250">
 
-noncoding, antisense expression: only during low energy phase
+*** =right
+<img src="assets/img/cat_phases_p0_1.png"  height="250">
+<img src="assets/img/noisy_phases_p0_1.png"  height="250">
 
-upstream noncoding: detected by Karl, segmenTier, potentially new mechanism
-after yeast WGD
+--- &twocol
+
+### Pervasive Transcription During Low Energy Phase!
+
+*** =left
+<img src="assets/img/dubious_phases_p0_1.png"  height="250">
+<img src="assets/img/AS_man_phases_p0_1.png"  height="250">
+
+*** =right
+<img src="assets/img/hawkins13_phases_p0_1.png"  height="250">
+<img src="assets/img/telomere_phases_p0_1.png"  height="250">
+
+--- &twocol
+
+### Pervasive Transcription During Low Energy Phase!
+
+*** =left
+<br/><br/>
+
+Non-coding transcription, including anti-sense is heavily
+biased to the blue gene phase, where ATP/ADP is low. 
+
+<b>Experimental transcription as a<br/>
+substrate for evolution?</b>
+
+*** =right
+<img src="assets/img/osci_phastcons_p0_1.png"  height="250">
+<img src="assets/img/dsb_p0_1.png"  height="250">
 
 --- .class #id 
 
 ## THE END
 
-concepts and tools for cyano/bacteria, coilseq
+* Lots of data:<br/>
+Concepts and tools for cyano/bacteria, Coil-seq
 
+* Trade-off between growth rate &mu; and (recombinant) gene expression
 
+* Chromatin structure can act as a global regulator
+of transcription (growth laws!)
 
+* Cells may generate substrate for selection:<br/>
+a `weak lamarckian` mechanism of evolution that has
+already been suggested by Darwin
+
+* Thanks
 
 
 
