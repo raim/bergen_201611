@@ -1,6 +1,6 @@
 --- 
 
-title       : Gene Expression & Growth <br/>in Budding Yeast 
+title       : Gene Expression & Growth in Budding Yeast 
 subtitle    : X-Men Group Retreat, Bergen aan Zee, Nov 2016
 author      : Rainer Machne
 job         : 
