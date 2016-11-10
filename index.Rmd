@@ -100,7 +100,7 @@ the budding cycle|observed periods
 |
 <br/><img src="assets/img/thompson80_fig1_t2.png" height="220">|<img src="assets/img/zoom_T2_t.png" height="250">
 |
-<img src="assets/img/budding.svg" height="180">|$$\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \\ \frac{t_O}{2} = t_P &= \frac{\ln\frac{1+\sqrt{5}}{2}}{\mu} \end{aligned} \end{equation*}$$
+<img src="assets/img/budding.svg" height="180">|$$\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \\ t_{osc}=\frac{t_O}{2} = t_P &= \frac{\ln\frac{1+\sqrt{5}}{2}}{\mu} \end{aligned} \end{equation*}$$
 
 
 <font size=3>
@@ -427,9 +427,9 @@ Amariei *et al*, Microb Cell 2014: *Time resolved DNA occupancy dynamics during 
 --- .class #id 
 
 
-<img src="assets/img/nocetti16_ranges_major.png"  height="250">
+<img src="assets/img/nocetti16_ranges_major.png"  height="180">
 
-<img src="assets/img/nucl_nocetti16_movie_ts_.gif"  height="350"><img src="assets/img/nucl_nocetti16_movie_.gif"  height="350">
+<img src="assets/img/nucl_nocetti16_movie_ts_.gif"  height="290"><img src="assets/img/nucl_nocetti16_movie_.gif"  height="290">
 
 
 Global behaviour similar, but locally different consequences!<br/>
@@ -438,7 +438,7 @@ Sequence-dependence of nucleosome occupancy and rotational positioning.
 <br/>
 <font size=3>
 Nocetti & Whitehouse, GenesDevel 2016: *Nucleosome repositioning underlies
-dynamic gene expression.* \(\Leftarrow\) didn't cite us :(
+dynamic gene expression.* <b>\(\Leftarrow\) didn't cite us :(</b>
 </font>
 
 --- &twocolbigright
@@ -454,7 +454,7 @@ Upstream ncRNA SRG1 regulates SER3, but not in SER33<br/>
 *** =left
 1. RNA-seq time-series:<br/>get read-counts
 
-2. Pre-segment, <50 kb
+2. Pre-segment, < 40 kb
 
 3. Cluster each read-count:<br/>
 take DFT, scale, cluster (`kmeans`)

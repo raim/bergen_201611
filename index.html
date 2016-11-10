@@ -224,7 +224,7 @@ Heinzle <em>et al.</em>, 1983: <em>Modelling of sustained oscillations observed 
 </tr>
 <tr>
 <td><img src="assets/img/budding.svg" height="180"></td>
-<td>\[\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \\ \frac{t_O}{2} = t_P &= \frac{\ln\frac{1+\sqrt{5}}{2}}{\mu} \end{aligned} \end{equation*}\]</td>
+<td>\[\begin{equation*} \begin{aligned}t_D &= \frac{\ln(2)}{\mu} \\ t_{osc}=\frac{t_O}{2} = t_P &= \frac{\ln\frac{1+\sqrt{5}}{2}}{\mu} \end{aligned} \end{equation*}\]</td>
 </tr>
 </tbody></table>
 
@@ -796,9 +796,9 @@ Amariei <em>et al</em>, Microb Cell 2014: <em>Time resolved DNA occupancy dynami
 
 <slide class="class" id="id" style="background:;">
   <article data-timings="">
-    <p><img src="assets/img/nocetti16_ranges_major.png"  height="250"></p>
+    <p><img src="assets/img/nocetti16_ranges_major.png"  height="180"></p>
 
-<p><img src="assets/img/nucl_nocetti16_movie_ts_.gif"  height="350"><img src="assets/img/nucl_nocetti16_movie_.gif"  height="350"></p>
+<p><img src="assets/img/nucl_nocetti16_movie_ts_.gif"  height="290"><img src="assets/img/nucl_nocetti16_movie_.gif"  height="290"></p>
 
 <p>Global behaviour similar, but locally different consequences!<br/>
 Sequence-dependence of nucleosome occupancy and rotational positioning.</p>
@@ -806,7 +806,7 @@ Sequence-dependence of nucleosome occupancy and rotational positioning.</p>
 <p><br/>
 <font size=3>
 Nocetti &amp; Whitehouse, GenesDevel 2016: <em>Nucleosome repositioning underlies
-dynamic gene expression.</em> \(\Leftarrow\) didn&#39;t cite us :(
+dynamic gene expression.</em> <b>\(\Leftarrow\) didn&#39;t cite us :(</b>
 </font></p>
 
   </article>
@@ -822,7 +822,7 @@ dynamic gene expression.</em> \(\Leftarrow\) didn&#39;t cite us :(
 <div style='float:left;width:35%;'>
   <ol>
 <li><p>RNA-seq time-series:<br/>get read-counts</p></li>
-<li><p>Pre-segment, &lt;50 kb</p></li>
+<li><p>Pre-segment, &lt; 40 kb</p></li>
 <li><p>Cluster each read-count:<br/>
 take DFT, scale, cluster (<code>kmeans</code>)</p></li>
 <li><p>Dynamic Programming:<br/> <code>icor</code>, <code>ccor</code></p></li>
